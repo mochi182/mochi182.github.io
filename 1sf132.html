@@ -6,7 +6,7 @@
     <title>Y_Y</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="estilo.css" rel="stylesheet">
-\</head>
+</head>
 
 <body>
 
@@ -183,8 +183,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
+
+        $( "tr" ).click(function() {
+            if ($(this).attr('id') == undefined) {
+                $('tr').each(function() {
+                    $(this).css('border-top', '');
+                    $(this).css('border-bottom', '');
+                    $(this).removeAttr('id');
+                })
+                $(this).css('border-top', '10px dashed rgb(146, 91, 240)');
+                $(this).css('border-bottom', '10px dashed rgb(146, 91, 240)');
+                $(this).attr('id', 'selected');
+            } else  {
+                $(this).css('border-top', '');
+                $(this).css('border-bottom', '');
+                $(this).removeAttr('id');
+            }
+        });
+
         $(".flexContenido").each(function() {
-            alert(this.html());
+            if ($(this).text().includes("Calidad")){
+                $(this).css('background', 'linear-gradient(315deg, rgba(100,132,217,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%)');};
+            if ($(this).text().includes("OAC")){
+                $(this).css('background', 'linear-gradient(315deg, rgba(252,97,139,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%)');};
+            if ($(this).text().includes("Base de datos 2")){
+                $(this).css('background', 'linear-gradient(315deg, rgba(223,222,152,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%');};
+            if ($(this).text().includes("Estadística")){
+                $(this).css('background', 'linear-gradient(315deg, rgba(100,217,111,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%');};
+            if ($(this).text().includes("Programación 2")){
+                $(this).css('background', 'linear-gradient(315deg, rgba(252,154,97,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%)');};
+            if ($(this).text().includes("Métodos numéricos")){
+                $(this).css('background', 'linear-gradient(315deg, rgba(184,100,217,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%)');};
+            if ($(this).text().includes("No hubo clase")){
+                $(this).css('background: linear-gradient(315deg, rgba(208,208,208,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%)');};
         })
 
 

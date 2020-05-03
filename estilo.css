@@ -36,21 +36,25 @@ p.columnaSemanas {
 }
 
 td.columnaSemanas {
-    background-color: rgb(54, 50, 59);
+    background-color: #36323b;
     color: white;
     width: 20px;
-    border-bottom: 3px solid rgb(120, 101, 148);
+    border-bottom: 3px solid rgb(100, 76, 207);
 
 }
 
 td#actual {
-    background-color: rgb(120, 101, 148);
+    background-color: rgb(100, 76, 207);
     color: white;
     width: 20px;
 }
 
 td {
     border-bottom: 3px dashed #e9efff;
+}
+
+tr {
+    box-sizing: border-box;
 }
 
 .columnaContenido {
