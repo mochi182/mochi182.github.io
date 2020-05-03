@@ -39,12 +39,12 @@ td.columnaSemanas {
     background-color: #36323b;
     color: white;
     width: 20px;
-    border-bottom: 3px solid rgb(100, 76, 207);
+    border-bottom: 3px solid rgb(109, 81, 237);
 
 }
 
 td#actual {
-    background-color: rgb(100, 76, 207);
+    background-color: rgb(109, 81, 237);
     color: white;
     width: 20px;
 }
