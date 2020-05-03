@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,900&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
 /* ----- Encabezado ----- */
 
 h1 {
-    font-family: 'Exo', sans-serif;
-    font-size: 40px;
+    font-size: 45px;
+    font-weight: bolder;
 }
 
 header {
@@ -16,11 +22,12 @@ header {
 
 table {
     width: 100%;
+    text-align: center;
 }
 
 p.columnaSemanas {
-    font-family: 'Exo', sans-serif;
-    font-size: 40px;
+    font-weight: bolder;
+    font-size: 45px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     padding: 0px;
@@ -55,6 +62,7 @@ td {
 /* ----- Asignaciones ----- */
 
 .flexContenido {
+    font-weight: light;
     font-size: larger;
     display: flex;
     justify-content: center;
@@ -62,8 +70,7 @@ td {
     padding: 5px;
     width: 200px;
     height: 200px;
-    background: linear-gradient(315deg, rgba(112,106,201,1) 9%, rgba(222,245,255,1) 9%, rgba(228,255,248,1) 94%);
-
+    background: linear-gradient(315deg, rgba(112,106,201,1) 9%, rgba(222,245,255,1) 9%, rgba(229,228,255,1) 94%);
     color: rgb(54, 50, 59);
     margin: 3px;
     word-wrap: break-word;
@@ -75,4 +82,8 @@ td {
         height: 120px;
         font-size: smaller;
     }
+}
+
+p.materia {
+    font-weight: bold;
 }

@@ -1,0 +1,18 @@
+CALIDAD
+background: linear-gradient(315deg, rgba(112,106,201,1) 9%, rgba(222,245,255,1) 9%, rgba(229,228,255,1) 94%);
+
+OAC
+background: linear-gradient(315deg, rgba(250,150,111,1) 9%, rgba(222,245,255,1) 9%, rgba(229,228,255,1) 94%);
+
+ESTADISTICA
+background: linear-gradient(315deg, rgba(184,201,106,1) 9%, rgba(222,245,255,1) 9%, rgba(229,228,255,1) 94%);
+
+BASE DE DATOS
+background: linear-gradient(315deg, rgba(250,111,153,1) 9%, rgba(222,245,255,1) 9%, rgba(229,228,255,1) 94%);
+
+PROGRAMACION
+background: linear-gradient(315deg, rgba(106,201,198,1) 9%, rgba(222,245,255,1) 9%, rgba(229,228,255,1) 94%);
+
+
+NO HUBO CLASE
+background: linear-gradient(315deg, rgba(187,187,187,1) 9%, rgba(222,245,255,1) 9%, rgba(229,228,255,1) 94%);

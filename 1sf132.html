@@ -6,8 +6,7 @@
     <title>Y_Y</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="estilo.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Exo:900&display=swap" rel="stylesheet">
-</head>
+\</head>
 
 <body>
 
@@ -25,7 +24,7 @@
                 </td>
                 <td class="columnaContenido">
                     <div class="flexContenido">
-                        <h4>No hubo clases</h4>
+                        <p class="materia">No hubo clases</p>
                     </div>
                 </td>
             </tr>
@@ -64,31 +63,31 @@
                 </td>
                 <td class="columnaContenido">
                     <div class="flexContenido">
-                        <p>Calidad</p>
+                        <p class="materia">Calidad</p>
                         <p>Investigación 1 (video)</p>
                     </div>
                     <div class="flexContenido">
-                        <p>Calidad</p>
+                        <p class="materia">Calidad</p>
                         <p>Laboratorio 1</p>
                     </div>
                     <div class="flexContenido">
-                        <p>Base de datos 2</p>
+                        <p class="materia">Base de datos 2</p>
                         <p>Laboratorio 2</p>
                     </div>
                     <div class="flexContenido">
-                        <p>Base de datos 2</p>
+                        <p class="materia">Base de datos 2</p>
                         <p>Parcial</p>
                     </div>
                     <div class="flexContenido">
-                        <p>Programación 2</p>
+                        <p class="materia">Programación 2</p>
                         <p>Parcial</p>
                     </div>
                     <div class="flexContenido">
-                        <p>Estadística</p>
+                        <p class="materia">Estadística</p>
                         <p>Tarea 3</p>
                     </div>
                     <div class="flexContenido">
-                        <p>OAC</p>
+                        <p class="materia">OAC</p>
                         <p>Quiz</p>
                     </div>
                 </td>
@@ -100,19 +99,19 @@
                 </td>
                 <td class="columnaContenido">
                     <div class="flexContenido">
-                        <p>Estadística</p>
+                        <p class="materia">Estadística</p>
                         <p>Tarea 4</p>
                     </div>
                     <div class="flexContenido">
-                        <p>Métodos numéricos</p>
+                        <p class="materia">Métodos numéricos</p>
                         <p>Parcial</p>
                     </div>
                     <div class="flexContenido">
-                        <p>OAC</p>
+                        <p class="materia">OAC</p>
                         <p>Investigación sobre procesadores</p>
                     </div>
                     <div class="flexContenido">
-                        <p>OAC</p>
+                        <p class="materia">OAC</p>
                         <p>Parcial</p>
                     </div>
                 </td>
@@ -124,7 +123,7 @@
                 </td>
                 <td class="columnaContenido">
                     <div class="flexContenido">
-                        <p>Programación 2</p>
+                        <p class="materia">Programación 2</p>
                         <p>Proyecto de frameworks</p>
                     </div>
                 </td>
@@ -136,7 +135,7 @@
                 </td>
                 <td class="columnaContenido">
                     <div class="flexContenido">
-                        <p>Calidad</p>
+                        <p class="materia">Calidad</p>
                         <p>Investigación 2</p>
                     </div>
                 </td>
@@ -183,5 +182,12 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(".flexContenido").each(function() {
+            alert(this.html());
+        })
+
+
+    </script>
 </body>
 </html>
