@@ -20,7 +20,7 @@ table {
 
 p.columnaSemanas {
     font-family: 'Exo', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     padding: 0px;
@@ -62,7 +62,8 @@ td {
     padding: 5px;
     width: 200px;
     height: 200px;
-    background-color: rgb(194, 236, 255);
+    background: linear-gradient(315deg, rgba(112,106,201,1) 9%, rgba(222,245,255,1) 9%, rgba(228,255,248,1) 94%);
+
     color: rgb(54, 50, 59);
     margin: 3px;
     word-wrap: break-word;
@@ -70,8 +71,8 @@ td {
 
 @media screen and (max-width: 500px) {
     .flexContenido {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         font-size: smaller;
     }
 }
