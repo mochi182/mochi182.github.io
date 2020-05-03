@@ -16,6 +16,7 @@ header {
 }
 
 table {
+    width: 100%;
 }
 
 p.columnaSemanas {
@@ -42,6 +43,10 @@ td#actual {
     border: 1px solid rgb(120, 101, 148);
 }
 
+td {
+    border-bottom: 3px dashed lightblue;
+}
+
 .columnaContenido {
     display: flex;
     flex-wrap: wrap;
@@ -53,9 +58,22 @@ td#actual {
     justify-content: center;
     flex-flow: column;
     padding: 5px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background-color: rgb(194, 236, 255);
     color: rgb(54, 50, 59);
-    margin: 0px 0px 10px 10px;
+    margin: 3px;
+    word-wrap: break-word;
+}
+
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+    .flexContenido {
+        width: 100px;
+        height: 100px;
+        font-size: smaller;
+    }
 }
