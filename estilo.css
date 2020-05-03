@@ -3,8 +3,19 @@ h1 {
     font-size: 40px;
 }
 
-table {
+header {
     text-align: center;
+    padding: 30px;
+    color: white;
+    background-color: rgb(54, 50, 59);
+}
+
+header {
+    color: white;
+    background-color: rgb(54, 50, 59);
+}
+
+table {
 }
 
 p.columnaSemanas {
@@ -18,10 +29,17 @@ p.columnaSemanas {
 }
 
 td.columnaSemanas {
-    background-color: #ff8a2b;
+    background-color: rgb(54, 50, 59);
     color: white;
     width: 20px;
-    border: 1px solid #ff8a2b;
+    border: 1px solid rgb(54, 50, 59);
+}
+
+td#actual {
+    background-color: rgb(120, 101, 148);
+    color: white;
+    width: 20px;
+    border: 1px solid rgb(120, 101, 148);
 }
 
 .columnaContenido {
@@ -31,15 +49,13 @@ td.columnaSemanas {
 }
 
 .flexContenido {
-    padding: 5px;
+    display: flex;
     justify-content: center;
+    flex-flow: column;
+    padding: 5px;
     width: 150px;
     height: 150px;
-    background-color: lightblue;
+    background-color: rgb(194, 236, 255);
+    color: rgb(54, 50, 59);
     margin: 0px 0px 10px 10px;
-}
-
-header {
-    text-align: center;
-    padding: 30px;
 }
