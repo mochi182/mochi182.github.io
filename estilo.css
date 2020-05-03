@@ -1,3 +1,5 @@
+/* ----- Encabezado ----- */
+
 h1 {
     font-family: 'Exo', sans-serif;
     font-size: 40px;
@@ -5,15 +7,12 @@ h1 {
 
 header {
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     color: white;
     background-color: rgb(54, 50, 59);
 }
 
-header {
-    color: white;
-    background-color: rgb(54, 50, 59);
-}
+/* ----- Tabla ----- */
 
 table {
     width: 100%;
@@ -53,7 +52,10 @@ td {
     flex-shrink: 0;
 }
 
+/* ----- Asignaciones ----- */
+
 .flexContenido {
+    font-size: larger;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -66,11 +68,7 @@ td {
     word-wrap: break-word;
 }
 
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: landscape) {
+@media screen and (max-width: 500px) {
     .flexContenido {
         width: 100px;
         height: 100px;
