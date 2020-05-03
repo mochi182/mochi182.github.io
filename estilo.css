@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
 
 body{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 
 /* ----- Encabezado ----- */
@@ -13,7 +13,7 @@ h1 {
 
 header {
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     color: white;
     background-color: rgb(54, 50, 59);
 }
@@ -39,18 +39,18 @@ td.columnaSemanas {
     background-color: rgb(54, 50, 59);
     color: white;
     width: 20px;
-    border: 1px solid rgb(54, 50, 59);
+    border-bottom: 3px solid rgb(120, 101, 148);
+
 }
 
 td#actual {
     background-color: rgb(120, 101, 148);
     color: white;
     width: 20px;
-    border: 1px solid rgb(120, 101, 148);
 }
 
 td {
-    border-bottom: 3px dashed lightblue;
+    border-bottom: 3px dashed #e9efff;
 }
 
 .columnaContenido {
@@ -70,7 +70,7 @@ td {
     padding: 5px;
     width: 200px;
     height: 200px;
-    background: linear-gradient(315deg, rgba(112,106,201,1) 9%, rgba(222,245,255,1) 9%, rgba(229,228,255,1) 94%);
+    background: linear-gradient(315deg, rgba(100,132,217,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%);
     color: rgb(54, 50, 59);
     margin: 3px;
     word-wrap: break-word;
