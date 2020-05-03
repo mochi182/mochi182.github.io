@@ -1,3 +1,8 @@
+h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 40px;
+}
+
 table {
     text-align: center;
 }
@@ -10,14 +15,13 @@ p.columnaSemanas {
     padding: 0px;
     margin: 10px 0px 10px 0px;
     transform: rotate(180deg);
-
 }
 
 td.columnaSemanas {
-    background-color: #ec8129;
+    background-color: #ff8a2b;
     color: white;
     width: 20px;
-    border: 1px solid #ec8129;
+    border: 1px solid #ff8a2b;
 }
 
 .columnaContenido {
@@ -27,8 +31,15 @@ td.columnaSemanas {
 }
 
 .flexContenido {
+    padding: 5px;
+    justify-content: center;
     width: 150px;
     height: 150px;
     background-color: lightblue;
-    margin: 10px 0px 0px 10px;
+    margin: 0px 0px 10px 10px;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
 }
