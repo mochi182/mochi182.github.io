@@ -14,8 +14,21 @@ p.columnaSemanas {
 }
 
 td.columnaSemanas {
-    background-color: #0fdebd;
+    background-color: #ec8129;
     color: white;
     width: 20px;
-    border: 1px solid #0fdebd;
+    border: 1px solid #ec8129;
+}
+
+.columnaContenido {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.flexContenido {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    margin: 10px 0px 0px 10px;
 }
