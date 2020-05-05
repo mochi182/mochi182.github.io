@@ -185,11 +185,11 @@
     <script>
 
         $( "td.columnaSemanas" ).click(function() {
-            if ($(this).attr('id') == undefined) {
+            if ($(this).parent().attr('id') == undefined) {
                 $('tr').each(function() {
-                    $(this).parent().css('border-top', '');
-                    $(this).parent().css('border-bottom', '');
-                    $(this).parent().removeAttr('id');
+                    $(this).css('border-top', '');
+                    $(this).css('border-bottom', '');
+                    $(this).removeAttr('id');
                 })
                 $(this).parent().css('border-top', '6px solid rgb(109, 81, 237)');
                 $(this).parent().css('border-bottom', '6px solid rgb(109, 81, 237)');
@@ -202,7 +202,7 @@
         });
 
         $(".flexContenido").click(function() {
-            alert("Haz clickeado aquiiiiii");
+            alert("Info de la asignación...");
         });
 
         $(".flexContenido").each(function() {
