@@ -1,0 +1,22 @@
+{
+    "i1" : {
+            "título": "Info",
+            "semana": 1,
+            "tema": "No hubo clases",
+            "descripción": "Esta semana no hubo clases."
+        },
+    "i2" : {
+        "título": "Info",
+        "semana": 14,
+        "tema": "Pagar matrícula",
+        "descripción": "Última semana para pagar. Después de esta semana hay recargo."
+    },
+    "s1" : {
+        "fechaInicio": "fecha",
+        "fechaFinal": "fecha",
+        "asignaciones": []
+    }
+
+}
+
+

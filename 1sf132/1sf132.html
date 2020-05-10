@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Y_Y</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="estilo.css" rel="stylesheet">
+    <link href="1sf132.css" rel="stylesheet">
 </head>
 
 <body>
@@ -193,47 +193,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-
-        $( "td.columnaSemanas" ).click(function() {
-            if ($(this).parent().attr('id') == undefined) {
-                $('tr').each(function() {
-                    $(this).css('border-top', '');
-                    $(this).css('border-bottom', '');
-                    $(this).removeAttr('id');
-                })
-                $(this).parent().css('border-top', '6px solid rgb(109, 81, 237)');
-                $(this).parent().css('border-bottom', '6px solid rgb(109, 81, 237)');
-                $(this).parent().attr('id', 'selected');
-            } else  {
-                $(this).parent().css('border-top', '');
-                $(this).parent().css('border-bottom', '');
-                $(this).parent().removeAttr('id');
-            }
-        });
-
-        $(".flexContenido").click(function() {
-            alert("Info de la asignación...");
-        });
-
-        $(".flexContenido").each(function() {
-            if ($(this).text().includes("Calidad")){
-                $(this).css('background', 'linear-gradient(315deg, rgba(100,132,217,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%)');};
-            if ($(this).text().includes("OAC")){
-                $(this).css('background', 'linear-gradient(315deg, rgba(252,97,139,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%)');};
-            if ($(this).text().includes("Base de datos 2")){
-                $(this).css('background', 'linear-gradient(315deg, rgba(223,222,152,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%');};
-            if ($(this).text().includes("Estadística")){
-                $(this).css('background', 'linear-gradient(315deg, rgba(100,217,111,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%');};
-            if ($(this).text().includes("Programación 2")){
-                $(this).css('background', 'linear-gradient(315deg, rgba(252,154,97,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%)');};
-            if ($(this).text().includes("Métodos numéricos")){
-                $(this).css('background', 'linear-gradient(315deg, rgba(184,100,217,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%)');};
-            if ($(this).text().includes("Información")){
-                $(this).css('background', 'linear-gradient(315deg, rgba(208,208,208,1) 9%, rgba(233,239,255,1) 9%, rgba(227,244,255,1) 94%)');};
-        })
-
-
-    </script>
+    <script src ="scripts/1sf132.js"></script>
 </body>
 </html>
