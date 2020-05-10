@@ -10,16 +10,33 @@
   </head>
 <body>
 
-    <h1>Instrumentos</h1>
-    <h2>Ejemplo de uso de Foundation</h2>
+    <header>
+        <h1>Instrumentos</h1>
+        <h2>Ejemplo de uso de Foundation</h2>
+    </header>
 
     <a href="secuenciador.html">INGRESE AL SECUENCIADOR</a>
 
-    <table>
+    <div class="grid-x grid-padding-x">
+        <div class="large-4 medium-4 cell">
+            <label>Elige un tipo de instrumento</label>
+            <select name="Opciones" id="seleccionador" class="form-control">
+                <option value="viento">Viento</option>
+                <option value="cuerda">Cuerda</option>
+                <option value="percusion">Percusión</option>
+                <option value="electronico">Electrónico</option>
+            </select>
+        </div>
+    </div>
+
+
+    <table style="width:100%;">
         <tbody>
-            <tr class="descripcion viento">
-                <h3>Instrumentos de viento</h3>
-                Los instrumentos de viento son una familia de instrumentos musicales los cuales producen el sonido por la vibración de la masa de aire en su interior, sin necesidad de cuerdas o membranas porque solo requiere de la vibración del aire. 
+            <tr class="viento">
+                <td>
+                    <h3>Instrumentos de viento</h3>
+                    Los instrumentos de viento son una familia de instrumentos musicales los cuales producen el sonido por la vibración de la masa de aire en su interior, sin necesidad de cuerdas o membranas porque solo requiere de la vibración del aire. 
+                </td>
             </tr>
             <tr class="viento">
                 <td>Instrumento</td>
@@ -27,18 +44,25 @@
                 <td>Descripción</td>
             </tr>
             <tr class="viento">
-                <td>Trumpeta</td>
-                <td></td>
-                <td></td>
+                <td>Trompeta</td>
+                <td>
+                    <img src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/trumpet.png" alt="trompeta">
+                </td>
+                <td>La trompeta es un instrumento musical de viento, que pertenece a la familia de los instrumentos de viento metal o metales, fabricado en aleación de metal. El sonido se produce gracias a la vibración de los labios del intérprete en la parte denominada boquilla a partir de la columna del aire (flujo del aire). </td>
             </tr>
             <tr class="viento">
                 <td>Flauta</td>
-                <td></td>
-                <td></td>
+                <td>
+                    <img src="https://vignette.wikia.nocookie.net/shop-heroes/images/8/8a/Music_Wood_Flute.png/revision/latest/scale-to-width-down/340?cb=20151211230237" alt="flauta">
+                </td>
+                <td>Es  instrumento musical de viento. Por la sencillez de su construcción, puede que sea uno de los instrumentos más antiguos. Constan de un tubo, generalmente de madera o metal, con una serie de orificios y una boquilla, en el borde del cual (bisel) se produce el sonido. El aire puede llegar directamente de los labios del ejecutante.</td>
             </tr>
-            <tr class="descripcion cuerda">
-                <h3>Instrumentos de cuerda</h3>
-                Los instrumentos de cuerda son instrumentos musicales que producen sonidos por medio de las vibraciones de una o más cuerdas, usualmente amplificadas por medio de una caja de resonancia. Estas cuerdas están tensadas entre dos puntos del instrumento y se hacen sonar pulsando, frotando o percutiendo la cuerda.
+            
+            <tr class="cuerda">
+                <td>
+                    <h3>Instrumentos de cuerda</h3>
+                    Los instrumentos de cuerda son instrumentos musicales que producen sonidos por medio de las vibraciones de una o más cuerdas, usualmente amplificadas por medio de una caja de resonancia. Estas cuerdas están tensadas entre dos puntos del instrumento y se hacen sonar pulsando, frotando o percutiendo la cuerda.
+                </td>
             </tr>
             <tr class="cuerda">
                 <td>Instrumento</td>
@@ -47,17 +71,23 @@
             </tr>
             <tr class="cuerda">
                 <td>Guitarra</td>
-                <td></td>
-                <td></td>
+                <td>
+                    <img src="https://www.sistemaufo.com/imgs/productos/productos31_2246.jpg" alt="guitarra">
+                </td>
+                <td>Es un instrumento musical de cuerda pulsada compuesto de una caja de resonancia, un mástil sobre el que va adosado el diapasón o trastero, generalmente con un agujero acústico en el centro de la tapa (boca), y seis cuerdas. Sobre el diapasón van incrustados los trastes, que permiten las diferentes notas.</td>
             </tr>
             <tr class="cuerda">
                 <td>Violín</td>
-                <td></td>
-                <td></td>
+                <td>
+                    <img src="https://lh3.googleusercontent.com/proxy/7HRfxGQkvc9q8qJRt1y7KLtJoEl_A2MpLq9L3L2C-0j1_3efmEhoyV7ne27lVGhigvdVirCPEbt3ZgDtaPK6pfWjbcvphoDNc57uV_rTCykZGsYW3M6iO7oOTP6UlyfQi-dKkSqutilvCv5HF9QvDvQ21I0-biCH" alt="violin">
+                </td>
+                <td>Es un instrumento de cuatro cuerdas que se ejecuta con un arco. Su mástil carece de trastes, mientras que su caja de resonancia tiene una forma similar al contorno del número ocho. El violín se emplea sobre todo en la música clásica, aunque también puede aparecer en diversas corrientes del folklore, el jazz, el rock y el pop.</td>
             </tr>
-            <tr class="descripcion percusion">
-                <h3>Instrumentos de percusión</h3>
-                Un instrumento de percusión es un tipo de instrumento musical cuyo sonido se origina al ser golpeado o agitado. Es la forma más antigua de instrumento musical.
+            <tr class="percusion">
+                <td>
+                    <h3>Instrumentos de percusión</h3>
+                    Un instrumento de percusión es un tipo de instrumento musical cuyo sonido se origina al ser golpeado o agitado. Es la forma más antigua de instrumento musical.
+                </td>
             </tr>
             <tr class="percusion">
                 <td>Instrumento</td>
@@ -66,17 +96,23 @@
             </tr>
             <tr class="percusion">
                 <td>Tambor</td>
-                <td></td>
-                <td></td>
+                <td>
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/0b/33/18/0b331836-01d1-da62-4ae9-224631f5d239/source/256x256bb.jpg" alt="tambor">
+                </td>
+                <td>Un tambor es un instrumento de percusión de sonido indeterminado. Los tambores generalmente se tocan golpeando con la mano, o con una o dos palos o baquetas. Se utiliza una amplia variedad de palos, incluidos palos de madera y palos con batidores suaves de fieltro en el extremo.</td>
             </tr>
             <tr class="percusion">
-                <td>Timbal</td>
-                <td></td>
-                <td></td>
+                <td>Marimba</td>
+                <td>
+                    <img src="https://c-sf.smule.com/rs-s77/arr/85/a1/732d8bd1-7ffb-47cf-836a-8b6190367f9c_256.jpg" alt="marimba">
+                </td>
+                <td>La marimba es un instrumento de percusión idiófono, que consiste en una serie de láminas de madera de distintos tamaños, dispuestas de mayor a menor, cada una con una altura de sonido diferente, que se golpean con mazos para producir notas musicales.  Cada tecla tiene su propia caja de resonancia y el conjunto está fijo en un armazón con patas.</td>
             </tr>
-            <tr class="descripcion electronico">
-                <h3>Instrumentos electrónicos</h3>
-                Un instrumento musical electrónico es un instrumento musical que produce sonido mediante circuitos electrónicos. Estos instrumentos suenan gracias a la producción de una señal de audio eléctrica, electrónica o digital que en último término se conecta a un amplificador de potencia que acciona la membrana de un altavoz, creando el sonido que se escucha por parte del intérprete y el oyente.
+            <tr class="electronico">
+                <tr>
+                    <h3>Instrumentos electrónicos</h3>
+                    Un instrumento musical electrónico es un instrumento musical que produce sonido mediante circuitos electrónicos. Estos instrumentos suenan gracias a la producción de una señal de audio eléctrica, electrónica o digital que en último término se conecta a un amplificador de potencia que acciona la membrana de un altavoz, creando el sonido que se escucha por parte del intérprete y el oyente.
+                </tr>
             </tr>
             <tr class="electronico">
                 <td>Instrumento</td>
@@ -85,20 +121,48 @@
             </tr>
             <tr class="electronico">
                 <td>Sintetizador</td>
-                <td></td>
-                <td></td>
+                <td>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71KVXcMj-pL._CR204,0,1224,1224_UX256.jpg" alt="sintetizador">
+                </td>
+                <td>Un sintetizador es un instrumento musical de tipo electrónico que, a través de circuitos, genera señales eléctricas que luego son convertidas a sonidos audibles. Una característica que diferencia al sintetizador de otros instrumentos electrónicos es que sus sonidos pueden ser creados y modificados. Los sintetizadores pueden imitar otros instrumentos o generar nuevos timbres. Usualmente son ejecutados a través de un teclado. </td>
             </tr>
         </tbody>
     </table>
 
     <footer>
-        <h3>
+        <i>
             Francisco Pérez - Ernesto Solís - Juan Huerta - Alejandro Andrade - Melitón Rodríguez
-        </h3>
+        </i>
+        <br>
         Fuentes:
 
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+
+        function seleccionante(){
+            var seleccion = document.getElementById('seleccionador').value;
+            var filas = document.getElementsByTagName("tr");
+            for(var i=0; i< filas.length; i++){
+                var claseFila = filas[i].getAttribute('class');
+                if (claseFila == seleccion){
+                    filas[i].style.display = 'block';
+                } else{
+                    filas[i].style.display = 'none';
+                }
+            };
+        };
+        
+        $( "#seleccionador" ).change(function() {
+            seleccionante();
+        });
+
+        $(document).ready(function() {
+            seleccionante();
+        });
+
+    </script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
