@@ -15,7 +15,7 @@
 
         <header>
             <div class="grid-x grid-padding-x">
-                <div class="large-12 medium-4 cell">
+                <div class="large-12 medium-12 cell">
                     <div class="secondary callout">
                         <h1>Secuenciador</h1>
                         <h4>- Ejemplo de uso de Foundation -</h4>
@@ -24,48 +24,98 @@
             </div>         
         </header>
         
+        <section>
+            <div class="grid-x grid-padding-x">
+                <div class="large-2 medium-2 cell">
+                    <input type="number" min="80" max="120" placeholder="BPM" id="BPM">
+                </div>
+                <div id="botonPlay" class="large-2 medium-2 cell">
+                    <button onclick="PLAY()" class="primary button">PLAY</button>
+                </div>
+            </div>
+        </section>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        Silenciar
-                    </th>
-                    <th>
-                        Instrumentos
-                    </th>
-                    <th>
-                        Beat 1
-                    </th>
-                </tr>
-            </thead>
-            
-            <tbody>
-                <tr>
-                    <td>
-                        []
-                    </td>
-                    <td>
-                        Instrumento 1
-                    </td>
-                    <td>
-                        Pow
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        []
-                    </td>
-                    <td>
-                        Instrumento 2
-                    </td>
-                    <td>
-                        Pow
-                    </td>
+        <div class="primary callout">
+            <table class="unstriped">
+               
+                <tbody>
+                    <tr id="bombo">
+                        <td>
+                            <input type="checkbox" class="checkbox mute">
+                        </td>
+                        <td>
+                            Bombo
+                        </td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
                     </tr>
-            </tbody>
-        </table>
+                
+                    <tr id="bolillo">
+                        <td>
+                            <input type="checkbox" class="checkbox mute">
+                        </td>
+                        <td>
+                            Bolillo
+                        </td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                    </tr>
+
+                    <tr id="piano">
+                        <td>
+                            <input type="checkbox" class="checkbox mute">
+                        </td>
+                        <td>
+                            Piano
+                        </td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                        <td class="beat">[M]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
             
         <div class="botonDiv">
             <a class="alert button" href="instrumentos.html">Ir a la página anterior</a>
@@ -83,7 +133,9 @@
 
     </div>
 
-    <script src="assets/js/secuenciador.js></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.3/howler.core.min.js"></script>
+    <script src="assets/js/secuenciador.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

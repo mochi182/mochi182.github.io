@@ -1,11 +1,4 @@
-img {
-    width: 350px;
-    border-radius: 5px;
-}
-
-body {
-    text-align: justify;
-}
+/* ----- Tabla ----- */
 
 tr{
     vertical-align: middle;
@@ -14,6 +7,12 @@ tr{
 th {
     text-align: center;
     background-color: rgb(241, 241, 241);
+}
+
+/* ----- Secciones ----- */
+
+body {
+    text-align: justify;
 }
 
 header {
@@ -26,14 +25,15 @@ footer {
     text-align: center;
 }
 
+/* ----- Elementos ----- */
+
+img {
+    width: 350px;
+    border-radius: 5px;
+}
+
 a{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
-
-#footId{
-    font-size: smaller;
-    font-weight: lighter;
-    text-align: right;
 }
