@@ -13,6 +13,7 @@ tr{
 
 th {
     text-align: center;
+    background-color: rgb(241, 241, 241);
 }
 
 header {
@@ -20,6 +21,7 @@ header {
 }
 
 footer {
+    font-size: smaller;
     font-weight: lighter;
     text-align: center;
 }
@@ -28,4 +30,10 @@ a{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+#footId{
+    font-size: smaller;
+    font-weight: lighter;
+    text-align: right;
 }

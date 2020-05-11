@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instrumentos</title>
     <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/inv1.css">
+    <link rel="stylesheet" href="assets/css/instrumentos.css">
   </head>
 <body>
 
@@ -16,7 +16,7 @@
         <header>
             <div class="grid-x grid-padding-x">
                 <div class="large-12 medium-4 cell">
-                    <div class="info callout">
+                    <div class="secondary callout">
                         <h1>Instrumentos musicales</h1>
                         <h4>- Ejemplo de uso de Foundation -</h4>
                     </div>
@@ -34,12 +34,12 @@
                     </select>
                 </div>
                 <div class="large-4 medium-4 cell">
-                    <a class="success button" href="secuenciador.html">Ir a la siguiente página</a>
+                    <a class="primary button" href="secuenciador.html">Ir a la siguiente página</a>
                 </div>
             </div>
         </header>
 
-        <table class="hover">
+        <table class="unstriped">
             <tbody>
                 <tr class="viento">
                     <td  colspan="3">
@@ -172,57 +172,23 @@
                     </td>
                 </tr>
             </tbody>
-            <tfoot>
-                <tr class="foot">
-                    <td colspan="3">
-                        Fuente de la información: Wikipedia
-                    </td>
-                </tr>
-            </tfoot>
         </table>
 
-        <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-                <footer>
-                    <div class="grid-x grid-padding-x">
-                        <div class="large-12 medium-6 cell">
-                            <div class="secondary callout">
-                                Francisco Pérez - Ernesto Solís - Juan Huerta - Alejandro Andrade - Melitón Rodríguez
-                            </div>
-                        </div>
+        <footer>
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 medium-6 cell">
+                    <div class="secondary callout">
+                        Francisco Pérez - Ernesto Solís - Juan Huerta - Alejandro Andrade - Melitón Rodríguez
                     </div>
-
-                </footer>
+                </div>
             </div>
-        </div>
+
+        </footer>
 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script>
-
-        function seleccionante(){
-            var seleccion = document.getElementById('seleccionador').value;
-            var filas = document.getElementsByTagName("tr");
-            for(var i=0; i< filas.length; i++){
-                var claseFila = filas[i].getAttribute('class');
-                if (claseFila == seleccion || claseFila == "foot"){
-                    filas[i].style.display = 'table-row';
-                } else{
-                    filas[i].style.display = 'none';
-                }
-            };
-        };
-        
-        $( "#seleccionador" ).change(function() {
-            seleccionante();
-        });
-
-        $(document).ready(function() {
-            seleccionante();
-        });
-
-    </script>
+    <script src="assets/js/instrumentos.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

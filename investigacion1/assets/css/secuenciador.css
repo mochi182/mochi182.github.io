@@ -1,0 +1,33 @@
+/* ----- Secciones ----- */
+
+header {
+    text-align: center;
+}
+
+body {
+    text-align: justify;
+}
+
+footer {
+    font-size: smaller;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* ----- Tablas ----- */
+
+tr{
+    vertical-align: middle;
+}
+
+th {
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+}
+
+/* ----- Elementos ----- */
+
+.botonDiv {
+    padding-right: 20px;
+    text-align: right;
+}
