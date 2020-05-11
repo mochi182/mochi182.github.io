@@ -38,3 +38,8 @@ th {
 .beat {
     color: transparent;
 }
+
+canvas{
+    border:1px solid lightgray;
+    text-align: center;
+}

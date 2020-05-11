@@ -24,21 +24,42 @@
             </div>         
         </header>
         
+    
         <section>
             <div class="grid-x grid-padding-x">
+                <div class="large-12 medium-12 cell text-center">
+                    <canvas id="canvas" width="500" height="200"></canvas>
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-x align-center-middle">
                 <div class="large-2 medium-2 cell">
                     <input type="number" min="80" max="120" placeholder="BPM" id="BPM">
                 </div>
-                <div id="botonPlay" class="large-2 medium-2 cell">
-                    <button onclick="PLAY()" class="primary button">PLAY</button>
+                <div id="botonPlay" class="large-1 medium-2 cell">
+                    <button onclick="botonPlay()" class="primary button">PLAY</button>
+                </div>
+                <div id="botonStop" class="large-1 medium-2 cell">
+                    <button onclick="botonStop()" class="alert button">STOP</button>
+                </div>
+                <div id="botonLoop" class="large-1 medium-2 cell">
+                    <button onclick="botonLoop()" class="secondary button">LOOP</button>
                 </div>
             </div>
         </section>
+
 
         <div class="primary callout">
             <table class="unstriped">
                
                 <tbody>
+                    <tr>
+                        <th colspan="2">
+                            Instrumento
+                        </th>
+                        <th colspan="16">
+                        </th>
+                    </tr>
                     <tr id="bombo">
                         <td>
                             <input type="checkbox" class="checkbox mute">
