@@ -54,7 +54,7 @@ function botonPlay() {
         duracion = ((16*60)/x)*1000;
         duracion_1_beat = duracion/16;
         var tiempo_transcurrido = 0;
-        var i = 0;
+        var i = 2;
 
         function accionPlay() {
             sonidos_por_beat(i);
@@ -65,8 +65,8 @@ function botonPlay() {
                 return null;
             } else{
                 if (loop){
-                    if(i ==15){
-                        i=0;
+                    if(i ==18){
+                        i=2;
                     };
                     setTimeout(accionPlay, duracion_1_beat);
                 } else{
