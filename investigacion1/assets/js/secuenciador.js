@@ -20,11 +20,15 @@ $( "td.beat" ).click(function() {
 });
 
 function sonidos_por_beat(i){
-    if(filas[0].cells[i].className.includes('on')){
-        alert('yes');
-    } else{
-        alert('fuck');
-    }
+    if(filas[1].cells[i].className.includes('on')){
+        kick.play();
+    };
+    if(filas[2].cells[i].className.includes('on')){
+        snare.play();
+    };
+    if(filas[3].cells[i].className.includes('on')){
+        piano.play();
+    };
 };
 
 function botonLoop(){
@@ -61,6 +65,9 @@ function botonPlay() {
                 return null;
             } else{
                 if (loop){
+                    if(i ==15){
+                        i=0;
+                    };
                     setTimeout(accionPlay, duracion_1_beat);
                 } else{
                     if (tiempo_transcurrido >= duracion){
