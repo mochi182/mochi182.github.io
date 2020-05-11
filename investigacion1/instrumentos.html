@@ -14,30 +14,35 @@
     <div class="grid-container">
 
         <header>
-            <h1>Instrumentos</h1>
-            <h2>Ejemplo de uso de Foundation</h2>
-        </header>
-
-        <a href="secuenciador.html">INGRESE AL SECUENCIADOR</a>
-
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 medium-4 cell">
+                    <div class="info callout">
+                        <h1>Instrumentos musicales</h1>
+                        <h4>- Ejemplo de uso de Foundation -</h4>
+                    </div>
+                </div>
+            </div>         
         
-        <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 cell">
-                <label>Elige un tipo de instrumento</label>
-                <select name="Opciones" id="seleccionador" class="form-control">
-                    <option value="viento">Viento</option>
-                    <option value="cuerda">Cuerda</option>
-                    <option value="percusion">Percusión</option>
-                    <option value="electronico">Electrónico</option>
-                </select>
+            <div class="grid-x grid-padding-x">
+                <div class="large-8 medium-4 cell">
+                    <label>Elige un tipo de instrumento</label>
+                    <select name="Opciones" id="seleccionador" class="form-control">
+                        <option value="viento">Viento</option>
+                        <option value="cuerda">Cuerda</option>
+                        <option value="percusion">Percusión</option>
+                        <option value="electronico">Electrónico</option>
+                    </select>
+                </div>
+                <div class="large-4 medium-4 cell">
+                    <a class="success button" href="secuenciador.html">Ir a la siguiente página</a>
+                </div>
             </div>
-        </div>
-
+        </header>
 
         <table class="hover">
             <tbody>
                 <tr class="viento">
-                    <td>
+                    <td  colspan="3">
                         <div class="primary callout">
                             <h3>Instrumentos de viento</h3>
                             Los instrumentos de viento son una familia de instrumentos musicales los cuales producen el sonido por la vibración de la masa de aire en su interior, sin necesidad de cuerdas o membranas porque solo requiere de la vibración del aire. 
@@ -45,9 +50,9 @@
                     </td>
                 </tr>
                 <tr class="viento">
-                    <td>Instrumento</td>
-                    <td>Imágen</td>
-                    <td>Descripción</td>
+                    <th>Instrumento</th>
+                    <th>Imágen</th>
+                    <th>Descripción</th>
                 </tr>
                 <tr class="viento">
                     <td>Trompeta</td>
@@ -73,7 +78,7 @@
                 </tr>
                 
                 <tr class="cuerda">
-                    <td>
+                    <td  colspan="3">
                         <div class="primary callout">
                             <h3>Instrumentos de cuerda</h3>
                             Los instrumentos de cuerda son instrumentos musicales que producen sonidos por medio de las vibraciones de una o más cuerdas, usualmente amplificadas por medio de una caja de resonancia. Estas cuerdas están tensadas entre dos puntos del instrumento y se hacen sonar pulsando, frotando o percutiendo la cuerda.
@@ -81,9 +86,9 @@
                     </td>
                 </tr>
                 <tr class="cuerda">
-                    <td>Instrumento</td>
-                    <td>Imágen</td>
-                    <td>Descripción</td>
+                    <th>Instrumento</th>
+                    <th>Imágen</th>
+                    <th>Descripción</th>
                 </tr>
                 <tr class="cuerda">
                     <td>Guitarra</td>
@@ -108,7 +113,7 @@
                     </td>
                 </tr>
                 <tr class="percusion">
-                    <td>
+                    <td  colspan="3">
                         <div class="primary callout">
                             <h3>Instrumentos de percusión</h3>
                             Un instrumento de percusión es un tipo de instrumento musical cuyo sonido se origina al ser golpeado o agitado. Es la forma más antigua de instrumento musical.
@@ -116,9 +121,9 @@
                     </td>
                 </tr>
                 <tr class="percusion">
-                    <td>Instrumento</td>
-                    <td>Imágen</td>
-                    <td>Descripción</td>
+                    <th>Instrumento</th>
+                    <th>Imágen</th>
+                    <th>Descripción</th>
                 </tr>
                 <tr class="percusion">
                     <td>Tambor</td>
@@ -143,7 +148,7 @@
                     </td>
                 </tr>
                 <tr class="electronico">
-                    <td>
+                    <td  colspan="3">
                         <div class="primary callout">
                             <h3>Instrumentos electrónicos</h3>
                             Un instrumento musical electrónico es un instrumento musical que produce sonido mediante circuitos electrónicos. Estos instrumentos suenan gracias a la producción de una señal de audio eléctrica, electrónica o digital que en último término se conecta a un amplificador de potencia que acciona la membrana de un altavoz, creando el sonido que se escucha por parte del intérprete y el oyente.
@@ -151,9 +156,9 @@
                     </td>
                 </tr>
                 <tr class="electronico">
-                    <td>Instrumento</td>
-                    <td>Imágen</td>
-                    <td>Descripción</td>
+                    <th>Instrumento</th>
+                    <th>Imágen</th>
+                    <th>Descripción</th>
                 </tr>
                 <tr class="electronico">
                     <td>Sintetizador</td>
@@ -169,7 +174,7 @@
             </tbody>
             <tfoot>
                 <tr class="foot">
-                    <td>
+                    <td colspan="3">
                         Fuente de la información: Wikipedia
                     </td>
                 </tr>
@@ -181,7 +186,7 @@
                 <footer>
                     <div class="grid-x grid-padding-x">
                         <div class="large-12 medium-6 cell">
-                            <div class="primary callout">
+                            <div class="secondary callout">
                                 Francisco Pérez - Ernesto Solís - Juan Huerta - Alejandro Andrade - Melitón Rodríguez
                             </div>
                         </div>
@@ -202,7 +207,7 @@
             for(var i=0; i< filas.length; i++){
                 var claseFila = filas[i].getAttribute('class');
                 if (claseFila == seleccion || claseFila == "foot"){
-                    filas[i].style.display = 'block';
+                    filas[i].style.display = 'table-row';
                 } else{
                     filas[i].style.display = 'none';
                 }

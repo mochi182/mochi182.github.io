@@ -7,14 +7,25 @@ body {
     text-align: justify;
 }
 
-thead {
-    text-align: center;
-}
-
 tr{
     vertical-align: middle;
 }
 
-td {
-    justify-content: center;
+th {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    font-weight: lighter;
+    text-align: center;
+}
+
+a{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
