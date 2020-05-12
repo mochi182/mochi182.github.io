@@ -25,7 +25,7 @@ tr{
 
 th {
     text-align: center;
-    color: rgb(134, 134, 134);
+    color: rgb(80, 80, 80);
     background: linear-gradient(0deg, rgba(255,255,255,1) 24%, rgba(225,233,237,1) 87%, rgba(255,255,255,1) 94%, rgba(204,218,236,1) 100%);
     font-size: smaller;
     font-weight: lighter;
@@ -52,6 +52,6 @@ canvas{
     text-align: center;
 }
 
-contenedor_de_tabla{
+#contenedor_de_tabla{
     overflow-x: auto;
 }

@@ -14,6 +14,8 @@ var sonido_mute = new Howl({
     src: ['./assets/sonidos/mute.wav'], volume: 0
   });
 
+
+
 var loop = true;
 var detenido = false;
 var beatlist = {};
@@ -85,6 +87,17 @@ function botonLoop(){
 
 function botonStop(){
     detenido = true;
+};
+
+function botonClear(){
+    var clear_beats = document.getElementsByClassName('beat');
+    for(var i=0; i < clear_beats.length; i++){
+        if (clear_beats[i].className.includes('on')){
+            clear_beats[i].classList.remove('on');
+            clear_beats[i].style.backgroundColor ="";
+        };
+    };
+    obtiene_beatlist();
 };
 
 function botonPlay() {
