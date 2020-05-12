@@ -34,7 +34,7 @@
 
             <div class="grid-x grid-padding-x align-center-middle">
                 <div class="large-2 medium-2 cell">
-                    <input type="number" min="80" max="120" placeholder="BPM" id="BPM">
+                    <input type="number" min="80" max="180" placeholder="BPM" id="BPM">
                 </div>
                 <div id="botonPlay" class="large-1 medium-2 cell">
                     <button onclick="botonPlay()" class="primary button">PLAY</button>
@@ -49,20 +49,37 @@
         </section>
 
 
-        <div class="primary callout">
+        <div class="primary callout" id="contenedor_de_tabla">
             <table class="unstriped">
                
                 <tbody>
                     <tr>
-                        <th colspan="2">
+                        <th>
+                            Mute
+                        </th>
+                        <th>
                             Instrumento
                         </th>
-                        <th colspan="16">
-                        </th>
+                        <th class="tracker">1</th>
+                        <th class="tracker">2</th>
+                        <th class="tracker">3</th>
+                        <th class="tracker">4</th>
+                        <th class="tracker">5</th>
+                        <th class="tracker">6</th>
+                        <th class="tracker">7</th>
+                        <th class="tracker">8</th>
+                        <th class="tracker">9</th>
+                        <th class="tracker">10</th>
+                        <th class="tracker">11</th>
+                        <th class="tracker">12</th>
+                        <th class="tracker">13</th>
+                        <th class="tracker">14</th>
+                        <th class="tracker">15</th>
+                        <th class="tracker">16</th>
                     </tr>
                     <tr id="bombo">
                         <td>
-                            <input type="checkbox" class="checkbox mute">
+                            <input type="checkbox" class="checkbox mute" value="off">
                         </td>
                         <td>
                             Bombo
@@ -87,7 +104,7 @@
                 
                     <tr id="bolillo">
                         <td>
-                            <input type="checkbox" class="checkbox mute">
+                            <input type="checkbox" class="checkbox mute" value="off">
                         </td>
                         <td>
                             Bolillo
@@ -112,7 +129,7 @@
 
                     <tr id="piano">
                         <td>
-                            <input type="checkbox" class="checkbox mute">
+                            <input type="checkbox" class="checkbox mute" value="off">
                         </td>
                         <td>
                             Piano

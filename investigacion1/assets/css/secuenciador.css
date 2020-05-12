@@ -25,7 +25,10 @@ tr{
 
 th {
     text-align: center;
-    background-color: rgb(241, 241, 241);
+    color: rgb(134, 134, 134);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 24%, rgba(225,233,237,1) 87%, rgba(255,255,255,1) 94%, rgba(204,218,236,1) 100%);
+    font-size: smaller;
+    font-weight: lighter;
 }
 
 /* ----- Elementos ----- */
@@ -37,9 +40,18 @@ th {
 
 .beat {
     color: transparent;
+    border: 2px solid rgb(254, 255, 255);
+    box-shadow: inset -1px -1px 1px 1px rgb(168, 169, 179);
+    background: linear-gradient(0deg, rgba(173,196,224,0.5046393557422969) 7%, rgba(192,219,246,0.4906337535014006) 13%, rgba(255,255,255,0.23573179271708689) 24%, rgba(143,197,217,0.17690826330532217) 94%);
+
+
 }
 
 canvas{
     border:1px solid lightgray;
     text-align: center;
+}
+
+contenedor_de_tabla{
+    overflow-x: auto;
 }
