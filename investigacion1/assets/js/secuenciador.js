@@ -15,10 +15,18 @@ var sonido_mute = new Howl({
   });
 
 
-
 var loop = true;
 var detenido = false;
 var beatlist = {};
+var canvas = document.getElementById("canvas");
+var context = canvas.getContext("2d");
+
+function getRndColor() {
+    var r = 230*Math.random()|60,
+        g = 230*Math.random()|60,
+        b = 230*Math.random()|60;
+    return 'rgb(' + r + ',' + g + ',' + b + ')';
+};
 
 function obtiene_beatlist(){
     var filas = document.getElementsByTagName("tr");
@@ -98,11 +106,10 @@ function botonClear(){
         };
     };
     obtiene_beatlist();
+    context.clearRect(0, 0, canvas.width, canvas.height);
 };
 
 function botonPlay() {
-    var canvas = document.getElementById("canvas");
-    var context = canvas.getContext("2d");
     var x = document.getElementById("BPM").value;
 
     if(x && valida_BPM()){
@@ -113,6 +120,15 @@ function botonPlay() {
 
         function accionPlay() {
             reproduce_beatlist(i);
+
+            if(kick.playing() || snare.playing() || piano.playing()){
+                var radio = (Math.random()*(120-5));
+                context.beginPath();
+                context.arc((canvas.width*Math.random()|0), (canvas.height*Math.random()|0), radio, 0, 2 * Math.PI);
+                context.fillStyle = getRndColor();
+                context.fill();
+            }
+
             i += 1;
             tiempo_transcurrido += duracion_1_beat;
             if(detenido){
@@ -139,7 +155,7 @@ function botonPlay() {
     }
 };
 
-$( ".mute" ).click(function() {
+$( ".mute" ).change(function() {
     var instrumento = this.parentElement.parentElement.getAttribute('id');
     if (instrumento == 'bombo' && this.value == 'on'){
         kick.volume(0);
@@ -147,5 +163,44 @@ $( ".mute" ).click(function() {
     } else{
         kick.volume(1);
         this.value = 'on';
+    }
+});
+
+function checkbox_init(){
+    var checkboxes = document.getElementsByClassName('mute');
+    for(var i=0; i<checkboxes.length; i++){
+        checkboxes[i].id = 'off';
+    }
+};
+checkbox_init();
+
+$( ".mute" ).click(function() {
+    var instrumento = this.parentElement.parentElement.getAttribute('id');
+    if (instrumento == 'bombo'){
+        if (this.id == 'on'){
+            kick.volume(1);
+            this.id = 'off';
+        } else{
+            kick.volume(0);
+            this.id = 'on';
+        }
+    }
+    if (instrumento == 'bolillo'){
+        if (this.id == 'on'){
+            snare.volume(1);
+            this.id = 'off';
+        } else{
+            snare.volume(0);
+            this.id = 'on';
+        }
+    }
+    if (instrumento == 'piano'){
+        if (this.id == 'on'){
+            piano.volume(1);
+            this.id = 'off';
+        } else{
+            piano.volume(0);
+            this.id = 'on';
+        }
     }
 });

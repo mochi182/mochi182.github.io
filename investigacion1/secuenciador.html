@@ -28,25 +28,25 @@
         <section>
             <div class="grid-x grid-padding-x">
                 <div class="large-12 medium-12 cell text-center">
-                    <canvas id="canvas" width="500" height="200"></canvas>
+                    <canvas id="canvas"></canvas>
                 </div>
             </div>
 
-            <div class="grid-x grid-padding-x align-center-middle">
-                <div class="large-2 medium-2 cell">
+            <div class="grid-x grid-margin-x align-center-middle">
+                <div class="medium-3 small-4 cell">
                     <input type="number" min="80" max="180" placeholder="BPM" id="BPM">
                 </div>
-                <div id="botonPlay" class="large-1 medium-2 cell">
+                <div id="botonPlay" class="medium-1 small-2 cell">
                     <button onclick="botonPlay()" class="primary button">PLAY</button>
                 </div>
-                <div id="botonStop" class="large-1 medium-2 cell">
+                <div id="botonStop" class="medium-1 small-2 cell">
                     <button onclick="botonStop()" class="alert button">STOP</button>
                 </div>
-                <div id="botonLoop" class="large-1 medium-2 cell">
+                <div id="botonLoop" class="medium-1 small-2 cell">
                     <button onclick="botonLoop()" class="secondary button">LOOP</button>
                 </div>
-                <div id="botonClear" class="large-1 medium-2 cell">
-                    <button onclick="botonClear()" class="secondary button">Borrar todo</button>
+                <div id="botonClear" class="medium-1 small-2 cell">
+                    <button onclick="botonClear()" class="secondary button">Borrar</button>
                 </div>
             </div>
         </section>
@@ -82,7 +82,7 @@
                     </tr>
                     <tr id="bombo">
                         <td>
-                            <input type="checkbox" class="checkbox mute" value="off">
+                            <input type="checkbox" class="checkbox mute">
                         </td>
                         <td>
                             Bombo
@@ -107,7 +107,7 @@
                 
                     <tr id="bolillo">
                         <td>
-                            <input type="checkbox" class="checkbox mute" value="off">
+                            <input type="checkbox" class="checkbox mute">
                         </td>
                         <td>
                             Bolillo
@@ -132,7 +132,7 @@
 
                     <tr id="piano">
                         <td>
-                            <input type="checkbox" class="checkbox mute" value="off">
+                            <input type="checkbox" class="checkbox mute">
                         </td>
                         <td>
                             Piano
