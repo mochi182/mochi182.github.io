@@ -50,8 +50,15 @@ th {
 canvas{
     border:1px solid lightgray;
     text-align: center;
-    max-width: 500px;
+    width: 500px;
     height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+    canvas {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 #contenedor_de_tabla{

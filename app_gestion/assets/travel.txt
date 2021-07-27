@@ -1,0 +1,894 @@
+Travel
+move
+journey
+walk
+float
+trip
+cruise
+ride
+fall
+creep
+motion
+movement
+swim
+step
+drift
+come
+wander
+jaunt
+traveling
+automobile
+fly
+go
+travelling
+locomote
+locomotion
+change of location
+tourist
+tourism
+commuting
+move around
+wayfaring
+spread
+rise
+ascension
+crawl
+roll
+stray
+run
+circle
+peregrination
+caravan
+circumnavigation
+go up
+come up
+traversal
+follow
+entering
+roam
+slither
+go around
+get around
+trundle
+prance
+taxi
+progression
+traverse
+vacation
+pilgrimage
+raft
+wend
+walking
+air travel
+water travel
+train
+airplane
+trips
+travelers
+destinations
+flights
+routes
+leave
+stay
+arrive
+airline
+spend
+international
+visa
+passport
+autobiography
+people
+location
+pedestrian
+bicycle
+traveler
+itinerant
+voyage
+excursion
+driving
+ski
+lift
+tram
+range
+ramble
+descend
+arise
+sit
+cast
+swing
+push
+round
+displace
+steamer
+resort
+inn
+restaurant
+motel
+resort
+hostel
+london
+casino
+building
+lodge
+room
+lodging
+amenity
+timeshare
+hostelry
+fleabag
+apartment
+airport
+boutique hotel
+house
+resort hotel
+ritz
+hotel room
+paris
+home
+coach
+spa
+hyatt
+exeter
+bedroom
+capsule hotel
+medieval europe
+coaching inn
+mansion
+motor inn
+western europe
+north america
+manhattan
+mall
+concierge
+luxury
+luxury goods
+suite
+condo
+downtown
+beachfront
+cafe
+condominium
+conference and resort hotels
+dining
+palace
+rooms
+extended stay hotel
+destination clubs
+nightclub
+suites
+the ritz london hotel
+lounge
+tourist
+ballroom
+oceanfront
+general manager
+residences
+pub
+middle manager
+administration of business
+mail coach
+dormitory
+bungalow
+starwood hotels and resorts worldwide
+edifice
+court
+auberge
+en-suite
+circumflex
+monastery
+abbey
+stable
+fodder
+hotels
+kitchen
+parlour
+aircraft
+airplane
+wing
+air
+fly
+aviation
+spacecraft
+helicopter
+insect
+flying
+ballistics
+overflight
+air travel
+gliding
+pilot
+plane
+jet
+trip
+sailing
+airliner
+rocket
+lift
+buoyancy
+bat
+hegira
+bird
+balloon
+takeoff
+flypast
+landing
+glide
+hejira
+cruise
+flyover
+glider
+maiden flight
+direct flight
+fledge
+escape
+trajectory
+jetliner
+airfoil
+aviator
+flier
+flight of stairs
+flight of steps
+missile
+spaceflight
+squadron
+aeroplane
+kite
+propulsion
+airship
+environment
+air propulsion
+aeronautics
+getaway
+flock
+stairway
+jailbreak
+exodus
+staircase
+ship
+planes
+aerostat
+airline
+airlines
+flew
+crew
+voyage
+flying squirrel
+travel
+onboard
+mission
+airways
+thrust
+movement
+object
+motion
+atmosphere
+volant
+hoverfly
+diptera
+gaseous
+aileron
+glider aircraft
+triplane
+sailplane
+cursorily
+midge
+gadfly
+nonstop
+decorate
+beautify
+lam
+adorn
+breakout
+break
+formation
+evasion
+creativity
+sortie
+solo
+dormitory
+hotel
+lodge
+inn
+lodging
+accommodation
+apartment
+shelter
+residential
+hostelry
+youth hostel
+backpacking
+auberge
+student lodging
+hostelling international
+bed
+guesthouse
+dorm
+motel
+boarding
+bungalow
+apartments
+post house
+canteen
+orphanage
+residence
+foyer
+home
+india
+australia
+premises
+house
+pub
+convent
+hermitage
+hospice
+tenement
+maisonette
+abode
+homeless
+bedsit
+flophouse
+hostal
+community
+khan
+caravanserai
+roadhouse
+housing
+homeless shelter
+pakistan
+hostels
+caravansary
+imaret
+posthouse
+travel
+dormitories
+castle
+hall
+daycare
+germany
+digging
+shelters
+aparthotel
+dorms
+refuge
+overcrowded
+ymca
+bunk bed
+tavern
+lakeside
+cafeteria
+sanctuary
+oakwood
+apartotel
+squalid
+tented
+schoolhouse
+beehive
+carpark
+housed
+hearth
+playground
+coed
+dwell
+bedroom
+makeshift
+gatehouse
+gymnasiums
+united kingdom
+playroom
+nation
+state
+land
+fatherland
+malta
+homeland
+region
+united nations
+quadrant
+corner
+tt
+haiti
+micronesia
+palau
+tuvalu
+etruria
+comoros
+sovereignty
+cuba
+barbados
+bahamas
+fiji
+nauru
+cyprus
+mauritius
+dominica
+government
+grenada
+jamaica
+province
+kiribati
+israel
+south american country
+indonesia
+australia
+people
+maldives
+sovereign state
+middle
+asian country
+african country
+burkina faso
+cape verde
+dominican republic
+trinidad and tobago
+saint lucia
+antigua and barbuda
+banana republic
+east timor
+papua new guinea
+sri lanka
+tax haven
+new zealand
+commonwealth
+area
+continent
+europe
+africa
+european country
+res publica
+body politic
+rural area
+western
+ethiopia
+yemen
+national
+rural
+zimbabwe
+venezuela
+motherland
+kingdom
+afghanistan
+syria
+turkmenistan
+zambia
+mauritania
+suriname
+kyrgyzstan
+iran
+korea
+egypt
+republic
+iceland
+world
+nations
+states
+travel
+ecotourism
+china
+transport
+tourist
+world tourism organization
+cruise ship
+economic
+germany
+culture
+united states
+late-2000s recession
+trade
+export
+pilgrimage
+business
+continental europe
+touristry
+sightseeing
+lodging
+balance of payments
+2009 flu pandemic
+sector
+commerce
+agricultural
+agriculture
+cultural
+transportation
+economy
+destination
+industries
+exports
+attractions
+parks
+united nations
+forestry
+tourist destination
+leisure
+italy
+france
+grand tour
+biodiversity
+paris
+russia
+brazil
+middle class
+latin
+staycation
+employment
+the new york times
+airline
+taxicab
+hotel
+resort
+camping
+casino
+theatre
+ski resort
+switzerland
+tour
+traveler
+excursion
+journey
+itinerant
+mastercard
+voyager
+voyage
+wayfaring
+multilingualism
+cuisine
+pilgrim
+spa
+baiae
+pausanias
+peregrine
+traveller
+jaunt
+wayfarer
+sightseer
+peregrinate
+peregrination
+islam
+junketeer
+ecotravel
+itinerate
+hypertravel
+circumnavigation
+hajj
+chaucer
+cybertravel
+junket
+development
+wayfare
+caravan
+domestic
+outflank
+asia
+industry
+kong
+hong
+betravel
+shulgi
+macao
+sectors
+commercial
+trek
+odyssey
+thruway
+investment
+singapore
+hub
+asian
+derail
+precess
+planning
+environment
+promote
+regional
+europe
+country
+cruise
+enterprises
+boost
+projects
+mainland
+real versus nominal value
+opportunities
+overseas
+urban
+foreign
+infrastructure
+norm
+global
+taiwan
+fortravel
+deforestation
+malaysia
+major
+largest
+emerging markets
+thailand
+guangdong
+biggest
+booming
+national
+health
+sustainable
+nation
+shanghai
+arrivals
+economies
+activities
+international
+snowshoe
+investments
+industrial
+local
+promoting
+growth
+food
+markets
+protestantism
+chinese
+resources
+affairs
+market
+cooperation
+greek language
+malaysian
+finance
+musher
+businesses
+eco
+bureau
+goods and services
+expand
+services
+boosting
+centers
+thriving
+ecological
+cities
+expanding
+areas
+emerging
+capital
+resource
+rural
+shopping
+entrepreneurs
+wanderlust
+goethe
+trip
+trekker
+tertiary sector of the economy
+traversal
+oxbridge
+roam
+commission
+hospitality service
+renaissance
+commercial enterprise
+business enterprise
+amusement park
+shopping mall
+nice
+wander
+music venue
+seaside resort
+sightsee
+league of nations
+buy souvenir
+zoom
+jet lag
+permanent residency
+england
+globe trot
+go back home
+abscond
+locomote
+see new place
+round trip ticket
+travel behavior
+lose something
+slither
+cosmopolitan
+elapse
+teleport
+trance
+experience different culture
+travel by
+leicester
+commute
+loughborough
+shilling
+gest
+book holiday
+see world
+calais
+read map
+euromonitor international
+expedition
+thanatourism
+motion sickness
+visit other country
+southampton
+sledge
+roman republic
+gibraltar
+digression
+malta
+air ticket
+float
+fam trip
+island hop
+athens
+farecard
+ancient china
+wanderer
+travel to
+choose destination
+naycation
+hamburg
+mount tai
+retrograde
+five sacred mountains
+tripper
+middle ages
+christian pilgrimage
+swash
+intercontinental
+buddhist pilgrimage
+go to airport
+hand luggage
+andorra
+austria
+travail
+canterbury tales
+bulgaria
+kibworth
+byway
+wu cheng'en
+contraflow
+career
+locomotion
+circumnavigate
+taxi
+journey to the west
+croatia
+prance
+progression
+explorer
+plane ticket
+english literature
+hawaii
+chinese literature
+cyprus
+hawker
+song dynasty
+finland
+seafarer
+travel literature
+trundle
+spaceway
+su shi
+runway
+iceland
+fan chengda
+passport
+business trip
+floatplane
+whish
+norway
+ming dynasty
+stray
+touring
+hospitality
+vacationers
+resorts
+hotels
+floriculture
+holidaymakers
+hotelier
+handicraft
+visitor
+aquaculture
+horticulture
+honeymooners
+riviera
+travelers
+agri
+trippers
+recreation
+nightlife
+aviation
+revitalization
+pearling
+fisheries
+agro
+arts
+entrepreneurship
+coastal
+phuket
+bioscience
+locals
+textile
+occupancy
+casinos
+inns
+guidebooks
+waterpark
+iata
+citrus
+spaceport
+region
+paragliding
+businesspeople
+marinas
+bookings
+costal
+ilia
+beautification
+advertising
+beaches
+viticulture
+safaris
+spas
+ecology
+sericulture
+maritime
+motels
+latvia
+xu xiake
+day trip
+crawl
+medieval italy
+lithuania
+tinker
+footloose
+romania
+francesco petrarch
+serbia
+mount ventoux
+mode of transport
+sweden
+duke of burgundy
+passenger ticket
+slovakia
+jura mountains
+slovenia
+hubometer
+spain
+viatecture
+kilometrage
+turkey
+bushwhack
+overgo
+upper class
+canada
+traipse
+lebanon
+rail transport
+return ticket
+travel itinerary
+get on plane
+bedroom community
+arrive at destination
+japan
+rite of passage
+british nobility
+chile
+landed gentry
+bosnia-herzegovina
+fly in airplane
+get lose
+argentina
+northern europe
+save your money
+go somewhere
+amphidromous
+on way
+go someplace
+thomas cook & son
+go around
+road warrior
+ostend
+holdall
+brussels
+move house
+western culture
+apiculture

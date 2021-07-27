@@ -1,0 +1,646 @@
+piano
+jazz
+sound
+melody
+guitar
+song
+sheet music
+classical music
+rhythm
+harmony
+lyrics
+chord
+singing
+folk music
+musical notation
+orchestra
+choir
+composer
+blues
+songwriter
+harmonise
+harmonize
+string quartet
+musician
+art
+opera
+poetry
+tonality
+popular music
+entertainment
+flute
+symphony
+art music
+musicology
+violin
+karaoke
+musical scale
+recapitulation
+electric guitar
+music genre
+pop music
+lead sheet
+fugue
+accompaniment
+radio
+funk
+ludwig van beethoven
+monophony
+sonata form
+rhapsody
+sing
+tweedle
+instrumental music
+ancient greece
+timbre
+sound off
+polyphony
+musical instrument
+double tongue
+greek language
+dance
+chorus
+singer
+rap
+keyboard instrument
+language
+tune
+lute
+country music
+archaeology
+percussion
+musical theatre
+bebop
+theme
+concert
+drum
+muse
+rock music
+chord progression
+musical improvisation
+concert band
+Alternative
+Art Punk
+Alternative Rock
+Britpunk
+College Rock
+Crossover Thrash 
+Crust Punk
+Emotional Hardcore
+Experimental Rock
+Folk Punk
+Goth 
+Gothic Rock
+Grunge
+Hardcore Punk
+Hard Rock
+Indie Rock
+Lo-fi
+Musique Concrète
+New Wave
+Progressive Rock
+Punk
+Shoegaze
+Steampunk
+Lullabies
+Sing-Along
+Stories
+Avant-Garde
+Ballet
+Baroque
+Cantata
+Chamber Music
+String Quartet
+Chant
+Choral
+Classical Crossover
+Concerto
+Concerto Grosso
+Contemporary Classical 
+Early Music
+Expressionist
+High Classical
+Impressionist
+Mass Requiem
+Medieval
+Minimalism
+Modern Composition
+Modern Classical
+Opera
+Oratorio
+Orchestral
+Organum
+Renaissance
+Romantic (early period)
+Romantic (later period)
+Sonata
+Symphonic
+Symphony
+Wedding Music
+Jingles
+TV Themes
+Novelty
+Parody Music
+Stand-up Comedy
+Vaudeville
+Americana
+Bakersfield Sound
+Bluegrass
+Progressive Bluegrass
+Reactionary Bluegrass
+Blues Country
+Cajun Fiddle Tunes
+Christian
+Harmony
+Contemporary
+Country
+Gospel
+Pop
+Rap
+Rock
+Soul
+Cowboy
+Western
+Cowpunk
+Dansband
+Honky Tonk
+Franco-Country
+Gulf and Western
+Hellbilly Music
+Honky Tonk
+Instrumental
+Lubbock Sound
+Nashville Sound
+Progressive
+Psychobilly
+Punkabilly
+Red Dirt
+Sertanejo
+County
+Bluegrass
+Urban Cowboy
+Western Swing
+Zydeco
+Dance
+Club
+Club Dance
+Breakcore
+Breakbeat
+ Breakstep
+-Beat
+Acid Breaks
+Baltimore Club
+Big Beat
+Breakbeat
+Hardcore
+Broken Beat
+Florida Breaks
+Nu Skool Breaks
+Brostep
+Chillstep
+Deep House
+Dubstep
+Electro House
+Electroswing
+Exercise
+Future Garage
+Garage
+Glitch Hop
+Glitch Pop
+Grime
+Hardcore
+Bouncy House
+Bouncy Techno
+Breakcore
+Digital Hardcore
+Doomcore
+Dubstyle
+Gabber
+Happy Hardcore
+Hardstyle
+Jumpstyle
+Makina
+Speedcore
+Terrorcore
+Uk Hardcore
+Hard Dance
+Hi-NRG / Eurodance
+Horrorcore (thx Matt)
+House
+Acid House
+Chicago House
+Deep House
+Diva House
+Dutch House
+Electro House
+Freestyle House
+French House
+Funky House
+Ghetto House
+Hardbag
+Hip House
+Italo House
+Latin House
+Minimal House
+Progressive House
+Rave Music
+Swing House
+Tech HouseTribal House
+UK Hard House
+US Garage
+Vocal House
+Jackin House
+Jungle
+Drum’n’bass
+Liquid Dub
+Regstep
+Speedcore
+Techno
+Acid Techno
+Detroit Techno
+Free Tekno
+Ghettotech
+Minimal
+Nortec
+Schranz
+Techno-Dnb
+Technopop
+Tecno Brega
+Toytown Techno
+Trance
+Acid Trance
+Classic Trance
+Dream Trance
+Goa Trance
+Dark Psytrance
+Full on
+Psybreaks
+Psyprog
+Suomisaundi
+Hard Trance
+Tech Trance
+Uplifting Trance
+Orchestral Uplifting
+Vocal Trance
+Trap
+Easy Listening
+Background
+Bop
+Elevator
+Furniture
+Lounge
+Swing
+Electronic
+-Step
+bit
+Ambient
+Ambient Dub
+Ambient House
+Ambient Techno
+Dark Ambient
+Drone Music
+Illbient
+Isolationism
+Lowercase
+Asian Underground
+Bassline
+Chillwave
+Chiptune
+Bitpop
+Game Boy
+Nintendocore
+Video Game Music
+Yorkshire Bleeps and Bass
+Crunk
+Downtempo
+Acid Jazz
+Balearic Beat
+Chill Out
+Dub Music
+Dubtronica
+Ethnic Electronica
+Moombahton
+Nu Jazz
+Trip Hop
+Drum & Bass
+Darkcore
+Darkstep
+Drumfunk
+Drumstep
+Hardstep
+Intelligent Drum and Bass
+Jump-Up
+Liquid Funk
+Neurofunk
+Oldschool Jungle:
+Darkside Jungle
+Ragga Jungle
+Raggacore
+Sambass
+Techstep
+Electro
+Crunk
+Electro Backbeat
+Electro-Grime
+Electropop
+Electro-swing
+Electroacoustic
+Acousmatic Music
+Computer Music
+Electroacoustic Improvisation
+Field Recording
+Live Coding
+Live Electronics
+Soundscape Composition
+Tape Music
+Electronica
+Berlin School
+Chillwave
+Electronic Art Music
+Electronic Dance Music
+Folktronica
+Freestyle Music
+Glitch
+Idm
+Laptronica
+Skweee
+Sound Art
+Synthcore
+Electronic Rock
+Alternative Dance
+Baggy
+Madchester
+Dance-Punk
+Dance-Rock
+Dark Wave
+Electroclash
+Electronicore
+Electropunk
+Ethereal Wave
+Indietronica
+New Rave
+Space Rock
+Synthpop
+Synthpunk
+Eurodance
+Bubblegum Dance
+Italo Dance
+Turbofolk
+Hardstyle
+Hi-Nrg
+Eurobeat
+Hard Nrg
+New Beat
+IDM/Experimental
+Industrial
+Trip Hop
+UK Garage
+-Step
+×
+Bassline
+Grime
+Speed Garage
+Enka
+French Pop
+Folk Music
+American Folk Revival
+Anti-Folk
+British Folk Revival
+Contemporary Folk
+Filk Music
+Freak Folk
+Indie Folk
+Industrial Folk
+Neofolk
+Progressive Folk
+Psychedelic Folk
+Sung Poetry
+Techno-Folk
+German Folk
+German Pop
+Fitness & Workout
+Hip-Hop/Rap
+Alternative Rap
+Avant-Garde
+Bounce
+Chap Hop
+Christian Hip Hop
+Conscious Hip Hop
+Country-Rap
+Crunkcore
+Cumbia Rap
+Dirty South
+East Coast
+Brick City Club
+Hardcore Hip Hop
+Mafioso Rap
+New Jersey Hip Hop
+Freestyle Rap
+G-Funk
+Gangsta Rap
+Golden Age
+Hardcore Rap
+Hip-Hop
+Hip Pop
+Hyphy
+Industrial Hip Hop
+Instrumental Hip Hop
+Jazz Rap
+Latin Rap
+Low Bap
+Lyrical Hip Hop
+Merenrap
+Midwest Hip Hop
+Chicago Hip Hop
+Detroit Hip Hop
+Horrorcore
+St. Louis Hip Hop
+Twin Cities Hip Hop
+Motswako
+Nerdcore
+New Jack Swing
+New School Hip Hop
+Old School Rap
+Rap
+Turntablism
+Underground Rap
+West Coast Rap
+Industrial
+Aggrotech
+Coldwave
+Cybergrind
+Dark Electro
+Death Industrial
+Electro-Industrial
+Electronic Body Music
+Futurepop
+Industrial Metal
+Industrial Rock
+Noise
+Japanoise
+Power Electronics
+Power Noise
+Witch House
+CCM
+Christian Metal
+Christian Pop
+Christian Rap
+Christian Rock
+Classic Christian
+Contemporary Gospel
+Gospel
+Christian & Gospel
+Praise & Worship
+Qawwali
+Southern
+Gospel
+Instrumental
+March
+J-Pop
+J-Rock
+J-Synth
+J-Ska
+J-Punk
+Jazz
+Acid Jazz
+Latin
+Alternativo
+ Rock Latino
+tango
+Bachata
+Baladas
+Boleros
+Bolero
+Bossa Nova
+The Beatles
+Bob Dylan
+Elvis Presley
+The Rolling Stones
+Chuck Berry
+Jimi Hendrix
+James Brown
+Little Richard
+Aretha Franklin
+Ray Charles
+Bob Marley
+The Beach Boys
+Buddy Holly
+Led Zeppelin
+Stevie Wonder
+Sam Cooke
+Muddy Waters
+Marvin Gaye
+The Velvet Underground
+Bo Diddley
+Otis Redding
+U
+Bruce Springsteen
+Jerry Lee Lewis
+Fats Domino
+The Ramones
+Nirvana
+Prince
+Prince
+The Clash
+The Who
+The Clash
+Nirvana
+Johnny Cash
+Smokey Robinson & The Miracles
+The Everly Brothers
+Neil Young
+Michael Jackson
+Madonna
+Roy Orbison
+John Lennon
+David Bowie
+Simon & Garfunkel
+The Doors
+Van Morrison
+Sly & the Family Stone
+Public Enemy
+The Byrds
+Janis Joplin
+Patti Smith
+Run-D.M.C.
+Elton John
+The Band
+Howlin' Wolf
+Pink Floyd
+The Allman Brothers Band
+Queen
+Eric Clapton
+The Allman Brothers Band
+Dr. Dre
+Howlin' Wolf
+Grateful Dead
+Eric Clapton
+Parliament-Funkadelic
+Dr. Dre
+Aerosmith
+Grateful Dead
+Sex Pistols
+Parliament-Funkadelic
+Louis Jordan
+Aerosmith
+Joni Mitchell
+Sex Pistols
+Tina Turner
+Metallica
+Etta James
+Joni Mitchell
+Phil Spector
+Tina Turner
+The Kinks
+Phil Spector
+Al Green
+The Kinks
+Cream
+Al Green
+The Temptations
+Cream
+Jackie Wilson
+The Temptations
+Carl Perkins
+Jackie Wilson
+The Police
+Frank Zappa
+AC/DC
+Radiohead
+Hank Williams
+Eagles
+The Shirelles
+Beastie Boys
+The Stooges
+The Four Tops
+Elvis Costello
+The Drifters
+Eminem
+Creedence Clearwater Revival
+N.W.A.
+Eminem
+James Taylor
+Black Sabbath
+Tupac
+Gram Parsons
+Miles Davis
+Jay-Z
+The Yardbirds
+Carlos Santana
+Ricky Nelson
+Tom Petty
+Guns N' Roses
+Booker T. & the M.G.'s
+Nine Inch Nails
+Lynyrd Skynyrd
+Martha & The Vandellas
+Diana Ross and the Supremes
+Diana Ross and the Supremes
+R.E.M.
+Roxy Music
+Curtis Mayfield
+Curtis Mayfield
+Carl Perkins
+Lee "Scratch" Perry
+Talking Heads
+
