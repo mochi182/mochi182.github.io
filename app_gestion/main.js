@@ -7,13 +7,9 @@
 /* ------------------------------ PARA LIMPIAR TEXTO ------------------------------ */
 
 class LimpiarTexto{
-
-    constructor(text){
-        this.text = text
-    }
     
-    limpiar(){
-        let to_clean = this.text;
+    limpiar(text){
+        let to_clean = text;
         let simbolos_re = /\++|-+|\*+|\/+|\\+|#+|\$+|%+|@+|!+|_+|\?+|¿+|\"|\n+|('s)+|'+/g
         to_clean = to_clean.replace(simbolos_re, " ").toLowerCase()
         let cleaned = ""
@@ -219,7 +215,6 @@ async function llamada2(api){
         lista_descripciones.push(videoDescripcion)
 
         let videoId = videos[i]["id"]["videoId"]
-        //alert(videoId)
         url_2 = "https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&maxResults=" + cantidad_comentarios + "&videoId=" + videoId + "&key=" + api_key
 
         promises.push(await fetch(url_2));
@@ -234,40 +229,62 @@ async function llamada3(api){
         api[i].json().then((data) => {
             for (let j = 0; j < data["items"].length; j++) {
                 let comentario = data["items"][j]["snippet"]["topLevelComment"]["snippet"]["textOriginal"]
-                lista_comentarios.push(comentario)
+                lista_comentarios.push(String(comentario))
             }
         } )
     }
 }
 
-async function llamada4(api){
+async function analizar() {
+    texto_titulos = limpiarTexto.limpiar(lista_titulos.join(' '))
+    texto_descripciones = limpiarTexto.limpiar(lista_descripciones.join(' '))
+    texto_comentarios = limpiarTexto.limpiar(lista_comentarios.join(' '))
 
-    alert(nombre_canal)
-    alert(lista_titulos)
-    alert(lista_descripciones)
-    alert(lista_comentarios)
+    var similitudCoseno1 = new SimilitudCoseno(clases, texto_titulos)
+    var similitudCoseno2 = new SimilitudCoseno(clases, texto_descripciones)
+    var similitudCoseno3 = new SimilitudCoseno(clases, texto_descripciones)
 
+    var valores_finales = {}
+    var simil_titulos = similitudCoseno1.calcular()
+    var simil_descripciones = similitudCoseno2.calcular()
+    var simil_comentarios = similitudCoseno3.calcular()
+
+    for (const key in simil_titulos) {
+        let key2 = "titulo(" + key + ")"
+        valores_finales[key2] = simil_titulos[key]
+    }
+    for (const key in simil_descripciones) {
+        let key2 = "descripcion(" + key + ")"
+        valores_finales[key2] = simil_descripciones[key]
+    }
+    for (const key in simil_comentarios) {
+        let key2 = "comentarios(" + key + ")"
+        valores_finales[key2] = simil_comentarios[key]
+    }
+
+    for (const key in valores_finales) {
+        alert(key)
+        alert(valores_finales[key])
+    }
+
+    /*
     url_3 = "watson studio"
     const respuesta = await fetch(url_3)
     const  peticion3 =  respuesta.json()
-    return peticion3
-}
-
-async function mostrar_resultados(api){
-    //var dato3 = api
+    return peticion3*/
 }
 
 
 /* ------------------------------ EJECUCIÓN ------------------------------ */
 
-var api_key = "AIzaSyBg2TsMSgaZhpgDOfjVKhOxOwOTANV1Za4"
-var clases = [ "technology", "music", "food", "travel", "videogames", "football", "science", "anime"]
+//var clases = [ "technology", "music", "food", "travel", "videogames", "football", "science", "anime"]
 var cantidad_comentarios = 8
 
 var nombre_canal = ""
 var lista_titulos = []
 var lista_descripciones = []
 var lista_comentarios = []
+var limpiarTexto = new LimpiarTexto()
 
 var clases = { 'technology' : ['drive', 'text', 'type', 'word', 'processing', 'computerbased', 'image', 'engine', 'gaming', 'aol', 'clip', 'design', 'knowledge', 'batch', 'dell', 'capabilities', 'gnome', 'compiler', 'proprietary', 'technologies', 'notepad', 'control', 'users', 'applet', 'login', 'card', 'techie', 'enables', 'testing', 'punched', 'xml', 'handheld', 'security', 'programmers', 'process', 'digital', 'natural', 'hemisphere', 'precomputer', 'disassembler', 'device', 'calculator', 'surf', 'intellij', 'terminal', 'cadra', 'monkey', 'escape', 'equipment', 'malevolent', 'megapixel', 'intel', 'third', 'bill', 'call', 'resistive', 'cyberpsychology', 'metaprogram', 'android', 'video', 'communications', 'use', 'novell', 'acrobat', 'alan', 'technical', 'technological', 'graphic', 'startup', 'adrem', 'program', 'office', 'corel', 'cyberterrorism', 'engineer', 'tree', 'lever', 'internet', 'hacker', 'analog', 'metaloxidesemiconductor', 'extranet', 'musical', 'nokia', 'meatware', 'bot', 'files', 'environment', 'mosfet', 'numbers', 'beta', 'framework', 'vacuum', 'encode', 'workstation', 'developer', 'virtual', 'recode', 'netscape', 'telephone', 'nonprogramming', 'screen', 'encryption', 'industrial', 'library', 'edholm', 'micro', 's', 'packages', 'personal', 'music', 'enabled', 'configuration', 'wave', 'programmes', 'belight', 'pseudocode', 'miniaturization', 'telecomputer', 'bug', 'dramality', 'assentor', 'poke', 'downloader', 'product', 'expertise', 'money', 'tukey', 'modem', 'search', 'qwerty', 'teleinstruction', 'electronic', 'display', 'applets', 'cyberjunkie', 'migrator', 'coding', 'microcode', 'graphics', 'authoring', 'programmer', 'computerism', 'machines', 'informatics', 'cyberintrusion', 'john', 'cybernetwork', 'cyberjargon', 'utility', 'processor', 'g', 'iphone', 'adware', 'branch', 'metadata', 'automation', 'gnu', 'algorithm', 'bitness', 'linux', 'battery', 'embedded', 'workflow', 'square', 'propylon', 'technology', 'developers', 'visual', 'flash', 'multithreaded', 'patch', 'emulation', 'license', 'networking', 'servlet', 'programmable', 'palm', 'tools', 'nasa', 'hackathon', 'highlevel', 'synapta', 'server', 'cinematize', 'wordprocessing', 'division', 'tape', 'addon', 'homo', 'programs', 'msn', 'intranet', 'multinetworked', 'provider', 'ssh', 'uploader', 'hitachi', 'prebuilt', 'vm', 'debugging', 'teletype', 'uninstall', 'adobe', 'satellite', 'key', 'cybersavvy', 'biotechnology', 'macintosh', 'learn', 'communication', 'devices', 'chemistry', 'converter', 'analytical', 'computer', 'bracket', 'compatible', 'lg', 'facebook', 'language', 'parser', 'idea', 'wireless', 'developed', 'quicksort', 'aging', 'undelete', 'gantt', 'assembler', 'user', 'minicomputer', 'platform', 'pcs', 'blackberry', 'mozilla', 'industry', 'playbill', 'isogon', 'foundation', 'alphabet', 'computernik', 'marketing', 'rootkit', 'linker', 'field', 'eclipse', 'browsing', 'summarizer', 'opensource', 'aid', 'avast', 'spyware', 'tv', 'management', 'hostmaster', 'science', 'regression', 'enterprise', 'agenda', 'appender', 'servers', 'ai', 'hp', 'computerologist', 'html', 'phone', 'multinetwork', 'killer', 'ibook', 'corporation', 'cad', 'studio', 'desktop', 'bioscience', 'systems', 'constellations', 'antiaging', 'multitasking', 'integrated', 'symantec', 'weapon', 'algorithms', 'computing', 'shareware', 'robotics', 'mainframe', 'audio', 'nessus', 'organize', 'computerlike', 'disk', 'scancode', 'your', 'apple', 'eyebeam', 'ietf', 'machine', 'biocomputing', 'cybersystem', 'molecules', 'compy', 'bionics', 'aeronautical', 'tool', 'products', 'srx', 'computeritis', 'microcomputer', 'app', 'central', 'nanocomputer', 'agile', 'applications', 'multimedia', 'slot', 'counterprogramming', 'chiclet', 'discover', 'interface', 'floppy', 'section', 'pc', 'anticomputer', 'unit', 'source', 'compact', 'bluetooth', 'available', 'peripheral', 'open', 'mac', 'cyanea', 'noncomputer', 'lovelace', 'unix', 'pair', 'project', 'cpu', 'scaling', 'apps', 'moore', 'microprocessor', 'sap', 'structure', 'screensaver', 'freeware', 'software', 'based', 'automated', 'applied', 'skill', 'navigation', 'providers', 'circuit', 'mobile', 'access', 'rom', 'firmware', 'upgrade', 'predefined', 'command', 'programming', 'hack', 'microsoft', 'autonomics', 'gates', 'engineering', 'toolkit', 'thirdparty', 'cisco', 'motherboard', 'gtk', 'chinese', 'quantum', 'insp', 'pessimize', 'samsung', 'payment', 'computerist', 'aspectoriented', 'multiload', 'google', 'electronics', 'table', 'store', 'medicine', 'uses', 'maintenance', 'room', 'puter', 'data', 'realtime', 'ag', 'neurocomputer', 'wifi', 'bloatware', 'in', 'functionality', 'oracle', 'architecture', 'portability', 'shrinkwrapped', 'orient', 'ios', 'hewlettpackard', 'biomedical', 'database', 'computerized', 'camera', 'softlifting', 'waterfall', 'innovations', 'magnetic', 'prehistory', 'os', 'system', 'eseries', 'w', 'package', 'supervisory', 'windows', 'ecos', 'mnemonic', 'hash', 'teleprogramming', 'cyberinteraction', 'operating', 'eater', 'cybertechnology', 'optimizer', 'computeraided', 'cybersuicide', 'write', 'free', 'fault', 'virtualize', 'telnet', 'preprogram', 'groupware', 'browsers', 'manufacturing', 'keyboard', 'malware', 'messaging', 'computerology', 'analytics', 'netzine', 'laptop', 'swing', 'keygen', 'test', 'imode', 'procedure', 'hardware', 'bios', 'manager', 'readymade', 'storage', 'agentry', 'cyberphilosophy', 'extensible', 'brain', 'metaprogramming', 'teleprogrammed', 'telecommuter', 'outspring', 'editor', 'spooler', 'neolithic', 'oppo', 'plugins', 'graphical', 'von', 'oss', 'online', 'right', 'logon', 'relational', 'eye', 'reader', 'feature', 'multitask', 'curly', 'media', 'tuner', 'http', 'webbased', 'crossgrade', 'web', 'immix', 'instruction', 'huawei', 'energy', 'subprogram', 'good', 'coreid', 'computation', 'function', 'courseware', 'compute', 'observatory', 'net', 'array', 'computerize', 'printing', 'model', 'hard', 'turing', 'home', 'documentation', 'computercide', 'instrument', 'interactive', 'application', 'assistant', 'ringtone', 'biology', 'forms', 'disc', 'debug', 'multitouch', 'club', 'ada', 'tech', 'accelerometer', 'cellular', 'broadband', 'scientist', 'wc', 'tube', 'softmodem', 'network', 'supercomputer', 'multiprogramming', 'plugin', 'dbms', 'integrates', 'programme', 'symbian', 'networks', 'ecosystem', 'assembly', 'scientific', 'segmentation', 'line', 'quiche', 'acclivity', 'stream', 'discovery', 'neumann', 'databases', 'antivirus', 'dumb', 'alpha', 'allows', 'using', 'ebcdic', 'subroutine', 'routine', 'background', 'transhumanism', 'excel', 'development', 'information', 'wardialer', 'cybersociology', 'nanotechnology', 'ibm', 'wheel', 'download', 'code', 'solutions', 'operator', 'commercial', 'dolphin', 'object', 'service', 'incrementor', 'computers', 'kludge', 'binary', 'browser', 'flow', 'chart', 'touchscreen', 'graphician', 'soft', 'cybernetic', 'clearstory', 'ergonomics', 'spring', 'chip', 'computerdom', 'lithium', 'expansion', 'interpreter', 'support', 'load', 'pda'],
 'music' : ['age', 'tongue', 'miles', 'power', 'darkcore', 'doors', 'mg', 'turntablism', 'floyd', 'housetribal', 'wedding', 'listening', 'college', 'gulf', 'grosso', 'funky', 'grateful', 'house', 'janis', 'madonna', 'folk', 'choir', 'baladas', 'digital', 'beethoven', 'cream', 'idm', 'oratorio', 'renaissance', 'wonder', 'james', 'horrorcore', 'tekno', 'berry', 'neil', 'carl', 'clearwater', 'composer', 'pink', 'gaye', 'electronica', 'archaeology', 'video', 'zeppelin', 'breakcore', 'temptations', 'double', 'cash', 'mitchell', 'lennon', 'yardbirds', 'hellbilly', 'makina', 'game', 'roy', 'elton', 'gospel', 'rave', 'jordan', 'art', 'psychedelic', 'progression', 'musical', 'illbient', 'county', 'lyrical', 'drone', 'chord', 'terrorcore', 'golden', 'funk', 'live', 'police', 'nails', 'lyrics', 'speedcore', 'west', 'theme', 'booker', 'black', 'urban', 'raggacore', 'intelligent', 'tunes', 'polyphony', 'hardcore', 'miracles', 'furniture', 'drumstep', 'joni', 'acdc', 'chamber', 'ancient', 'christian', 'industrial', 'who', 'al', 'rundmc', 'radiohead', 'bowie', 'band', 'latino', 'us', 'sung', 'praise', 'music', 'goth', 'inch', 'dansband', 'wave', 'future', 'electronicore', 'notation', 'chiptune', 'gabber', 'tops', 'jska', 'country', 'electric', 'oldschool', 'technodnb', 'space', 'perkins', 'acid', 'aretha', 'everly', 'fats', 'deep', 'impressionist', 'metal', 'diva', 'cooke', 'dead', 'etta', 'electronic', 'drifters', 'electroswing', 'song', 'doomcore', 'twin', 'coding', 'sertanejo', 'skweee', 'neurofunk', 'diddley', 'dre', 'rem', 'clash', 'crunkcore', 'electropop', 'death', 'scratch', 'ethnic', 'beach', 'hardstyle', 'john', 'supremes', 'bounce', 'eminem', 'midwest', 'ragga', 'western', 'orchestra', 'futurepop', 'allman', 'elvis', 'nelson', 'hyphy', 'garfunkel', 'chant', 'concert', 'trap', 'yorkshire', 'heads', 'tom', 'synthpunk', 'mass', 'piano', 'vandellas', 'cajun', 'recapitulation', 'bakersfield', 'gangsta', 'antifolk', 'songwriter', 'sonata', 'franklin', 'richard', 'chap', 'electroindustrial', 'francocountry', 'concrte', 'jerry', 'nine', 'string', 'ludwig', 'liquid', 'tonk', 'neofolk', 'cybergrind', 'ross', 'enemy', 'jack', 'backbeat', 'easy', 'pistols', 'composition', 'led', 'tape', 'lewis', 'requiem', 'martha', 'ghetto', 'nu', 'sound', 'nrg', 'cumbia', 'low', 'coast', 'drumfunk', 'german', 'computer', 'improvisation', 'prince', 'gothic', 'language', 'singer', 'eagles', 'crunk', 'timbre', 'sex', 'radio', 'velvet', 'moombahton', 'synthpop', 'jpunk', 'rolling', 'opera', 'orbison', 'comedy', 'electroacoustic', 'steampunk', 'folktronica', 'beat', 'rock', 'stone', 'field', 'jackin', 'dancepunk', 'vocal', 'drum', 'baltimore', 'guns', 'hank', 'regstep', 'the', 'ambient', 'shoegaze', 'frank', 'waters', 'tv', 'bap', 'jrock', 'jimi', 'techno', 'uk', 'recording', 'electrogrime', 'eurobeat', 'green', 'marvin', 'dark', 'shirelles', 'concerto', 'form', 'electro', 'chicago', 'family', 'chuck', 'dr', 'punkabilly', 'marley', 'greece', 'tune', 'new', 'east', 'turner', 'drumnbass', 'fiddle', 'jumpup', 'morrison', 'out', 'jingles', 'jersey', 'singalong', 'n', 'dutch', 'synthcore', 'jumpstyle', 'howlin', 'coldwave', 'filk', 'rap', 'lounge', 'kinks', 'domino', 'nwa', 'downtempo', 'merenrap', 'dubtronica', 'creedence', 'choral', 'conscious', 'electropunk', 'broken', 'britpunk', 'spector', 'techstep', 'public', 'bebop', 'nintendocore', 'school', 'mafioso', 'quartet', 'charles', 'u', 'aggrotech', 'eric', 'smith', 'medieval', 'harmonize', 'hinrg', 'wilson', 'japanoise', 'bouncy', 'melody', 'tonality', 'flute', 'chorus', 'curtis', 'standup', 'harmonise', 'carlos', 'young', 'dubstep', 'worship', 'genre', 'lead', 'boys', 'redding', 'sambass', 'french', 'sly', 'greek', 'witch', 'happy', 'byrds', 'scale', 'jackie', 'metallica', 'contemporary', 'phil', 'trip', 'st', 'full', 'big', 'beastie', 'themes', 'psyprog', 'hip', 'punk', 'bass', 'theatre', 'smokey', 'qawwali', 'uplifting', 'organum', 'santana', 'nova', 'bossa', 'british', 'muse', 'crossover', 'blues', 'sing', 'thrash', 'dream', 'buddy', 'williams', 'off', 'presley', 'perry', 'expressionist', 'toytown', 'underground', 'dub', 'step', 'electronics', 'dance', 'brick', 'parliamentfunkadelic', 'schranz', 'bubblegum', 'experimental', 'chillstep', 'indie', 'karaoke', 'indietronica', 'italo', 'jayz', 'skool', 'muddy', 'southern', 'entertainment', 'hop', 'bit', 'tupac', 'bolero', 'breakbeat', 'dylan', 'zappa', 'symphonic', 'rhapsody', 'baggy', 'accompaniment', 'bassline', 'roxy', 'stevie', 'classic', 'darkstep', 'breaks', 'red', 'johnny', 'body', 'bachata', 'sabbath', 'jungle', 'parsons', 'asian', 'joplin', 'dubstyle', 'nortec', 'elevator', 'motswako', 'rhythm', 'skynyrd', 'keyboard', 'enka', 'lynyrd', 'ballet', 'grime', 'singing', 'psytrance', 'swing', 'nashville', 'brown', 'parody', 'hendrix', 'technofolk', 'lullabies', 'davis', 'honky', 'lowercase', 'ghettotech', 'popular', 'jpop', 'glitch', 'louis', 'queen', 'goa', 'beatles', 'minimalism', 'old', 'little', 'florida', 'van', 'taylor', 'talking', 'nirvana', 'fitness', 'musicology', 'pop', 'reactionary', 'novelty', 'turbofolk', 'soul', 'matt', 'garage', 'wolf', 'freak', 'lee', 'noise', 'roses', 'hardstep', 'jazz', 'cowpunk', 'bluegrass', 'cowboy', 'later', 'cities', 'michael', 'speed', 'clapton', 'boy', 'hard', 'fugue', 'avantgarde', 'hiphoprap', 'ray', 'harmony', 'brothers', 'instrument', 'breakstep', 'nerdcore', 'exercise', 'grunge', 'alternative', 'club', 'zydeco', 'dirty', 'orchestral', 'tech', 'violin', 'bitpop', 'countryrap', 'trance', 'ramones', 'dancerock', 'gram', 'berlin', 'workout', 'balearic', 'lute', 'tweedle', 'bop', 'musician', 'mayfield', 'brostep', 'on', 'and', 'ricky', 'poetry', 'crust', 'isolationism', 'laptronica', 'emotional', 'lubbock', 'diana', 'early', 'bo', 'gfunk', 'jackson', 'monophony', 'stones', 'madchester', 'simon', 'americana', 'instrumental', 'tecno', 'american', 'latin', 'background', 'chillwave', 'darkside', 'detroit', 'high', 'petty', 'alternativo', 'idmexperimental', 'psychobilly', 'guitar', 'vaudeville', 'holly', 'sam', 'stories', 'dirt', 'march', 'cantata', 'otis', 'eurodance', 'david', 'ccm', 'robinson', 'bob', 'technopop', 'bruce', 'thx', 'hardbag', 'south', 'progressive', 'chill', 'musique', 'patti', 'city', 'aerosmith', 'sheet', 'tango', 'romantic', 'hiphop'],
@@ -280,10 +297,8 @@ var clases = { 'technology' : ['drive', 'text', 'type', 'word', 'processing', 'c
 }
 
 $("#form").submit(function(event) {
-
     var channelId = $("#canal").val();
-    llamada1(channelId, api_key).then(llamada2).then(llamada3).then(llamada4).then(mostrar_resultados)
-
+    var api_key = $("#llave").val();
+    llamada1(channelId, api_key).then(llamada2).then(llamada3)
     event.preventDefault()
-
 }) 

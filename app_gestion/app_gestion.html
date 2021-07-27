@@ -19,8 +19,13 @@
 
     <div class="container">
 
-        <h4>Proyecto final de gestión de la información</h4>
-        <h1>Clasificador de canales</h1>
+        <center>
+            <img src="http://images6.fanpop.com/image/photos/42700000/Cute-anime-cat-random-42791828-564-550.jpg" alt="">
+            <h1 style="color:red">YouCat</h1>
+            <h3>
+                Categorizador de canales de Youtube
+            </h3>
+        </center>
         <ul>
             <li>Aristides Isaza ()</li>
             <li>José Sieiro ()</li>
@@ -29,17 +34,25 @@
 
         <h4>Ingresa un canal de youtube:</h4>
         <form id="form">
+            Canal:
             <div class="form-group">
                 <input type="text" class="form-control" value="UCd21m0AHf4Vx88Znty7v4Cw" id="canal">
             </div>
 
+            Llave del API:
             <div class="form-group">
-                <input type="submit" value="Analizar" class="" id="boton">
+                <input type="text" class="form-control" value="AIzaSyBg2TsMSgaZhpgDOfjVKhOxOwOTANV1Za4" id="llave">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Obtener datos" class="" id="boton">
             </div>
         </form>
 
     </div>
 
+    <button onclick="analizar()">ANALIZAR AQUI DESPUES DE 5 SEGUNDOS</button>
+
     <script src="main.js"></script>
 </body>
-</html>-
+</html>
