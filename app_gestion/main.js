@@ -287,15 +287,17 @@ async function analizar() {
     }
     valores_finales["input_data"][0]["fields"] = fields
     valores_finales["input_data"][0]["values"] = values
-    console.log(JSON.stringify(valores_finales))
+    //console.log(JSON.stringify(valores_finales))
 
-    token = "eyJraWQiOiIyMDIxMDcxOTE4MzciLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJJQk1pZC02NzYwMDA1VDVSIiwiaWQiOiJJQk1pZC02NzYwMDA1VDVSIiwicmVhbG1pZCI6IklCTWlkIiwianRpIjoiYjg2YWMzOTktNzg0NC00OGVlLTlmNDctZDVhYTdkMjBmOTExIiwiaWRlbnRpZmllciI6IjY3NjAwMDVUNVIiLCJnaXZlbl9uYW1lIjoiQXJpc3RpZGVzIiwiZmFtaWx5X25hbWUiOiJJc2F6YSIsIm5hbWUiOiJBcmlzdGlkZXMgSXNhemEiLCJlbWFpbCI6ImFyaXN0aWRlcy5pc2F6YUB1dHAuYWMucGEiLCJzdWIiOiJhcmlzdGlkZXMuaXNhemFAdXRwLmFjLnBhIiwiYXV0aG4iOnsic3ViIjoiYXJpc3RpZGVzLmlzYXphQHV0cC5hYy5wYSIsImlhbV9pZCI6IklCTWlkLTY3NjAwMDVUNVIiLCJuYW1lIjoiQXJpc3RpZGVzIElzYXphIiwiZ2l2ZW5fbmFtZSI6IkFyaXN0aWRlcyIsImZhbWlseV9uYW1lIjoiSXNhemEiLCJlbWFpbCI6ImFyaXN0aWRlcy5pc2F6YUB1dHAuYWMucGEifSwiYWNjb3VudCI6eyJib3VuZGFyeSI6Imdsb2JhbCIsInZhbGlkIjp0cnVlLCJic3MiOiJiMjViNWI1ZjcyYTg0MjQ4YjkwN2E3YWM2YWE0NjBjMCIsImZyb3plbiI6dHJ1ZX0sImlhdCI6MTYyNzQ1MTQ0MCwiZXhwIjoxNjI3NDU1MDQwLCJpc3MiOiJodHRwczovL2lhbS5jbG91ZC5pYm0uY29tL2lkZW50aXR5IiwiZ3JhbnRfdHlwZSI6InVybjppYm06cGFyYW1zOm9hdXRoOmdyYW50LXR5cGU6YXBpa2V5Iiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiZGVmYXVsdCIsImFjciI6MSwiYW1yIjpbInB3ZCJdfQ.o6_wL7VZnur33RZD7Kv-D4zK9Kzl6hLkUFGijEUBvx9LjOnxfxMwN4yL3P5uRu4ONXXPGrXCHa1uzi2gHnQrl0eyNK2CTv_028UdKS8O5wBykHS3ts-Xn_GbltzFOYpTA_wFzcRlD0dl02Ok0Pe_68I_D01DMuMfnToOf4SETspXWuZ9_1AVaDezwEcBsbJvfrngXtB0SNxrMpIci93SrQiUIVrMpmeQIO74-6DPG4mmzVftXyuhwh6Z4o1tLrbESF7yIsqv2qwJhmleYoHLUpb8OFfhrwjzLosSDY3abiU7RI59pZv0BXMGcEXqn8wxt5YN7L85IbFNHXt398k8cg"
+    token = "eyJraWQiOiIyMDIxMDcxOTE4MzciLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJJQk1pZC02NzYwMDA1VDVSIiwiaWQiOiJJQk1pZC02NzYwMDA1VDVSIiwicmVhbG1pZCI6IklCTWlkIiwianRpIjoiODg5YjViOTQtYzNkOS00ZjgzLWFlZmQtMGZjN2I3MWRlZWIyIiwiaWRlbnRpZmllciI6IjY3NjAwMDVUNVIiLCJnaXZlbl9uYW1lIjoiQXJpc3RpZGVzIiwiZmFtaWx5X25hbWUiOiJJc2F6YSIsIm5hbWUiOiJBcmlzdGlkZXMgSXNhemEiLCJlbWFpbCI6ImFyaXN0aWRlcy5pc2F6YUB1dHAuYWMucGEiLCJzdWIiOiJhcmlzdGlkZXMuaXNhemFAdXRwLmFjLnBhIiwiYXV0aG4iOnsic3ViIjoiYXJpc3RpZGVzLmlzYXphQHV0cC5hYy5wYSIsImlhbV9pZCI6IklCTWlkLTY3NjAwMDVUNVIiLCJuYW1lIjoiQXJpc3RpZGVzIElzYXphIiwiZ2l2ZW5fbmFtZSI6IkFyaXN0aWRlcyIsImZhbWlseV9uYW1lIjoiSXNhemEiLCJlbWFpbCI6ImFyaXN0aWRlcy5pc2F6YUB1dHAuYWMucGEifSwiYWNjb3VudCI6eyJib3VuZGFyeSI6Imdsb2JhbCIsInZhbGlkIjp0cnVlLCJic3MiOiJiMjViNWI1ZjcyYTg0MjQ4YjkwN2E3YWM2YWE0NjBjMCIsImZyb3plbiI6dHJ1ZX0sImlhdCI6MTYyNzQ5MzE2OCwiZXhwIjoxNjI3NDk2NzY4LCJpc3MiOiJodHRwczovL2lhbS5jbG91ZC5pYm0uY29tL2lkZW50aXR5IiwiZ3JhbnRfdHlwZSI6InVybjppYm06cGFyYW1zOm9hdXRoOmdyYW50LXR5cGU6YXBpa2V5Iiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiZGVmYXVsdCIsImFjciI6MSwiYW1yIjpbInB3ZCJdfQ.DLDXGn6Hz5uHBkrqQkm1x0WQ6szdGzCJUBs4x8QXA6HFCjlzVP-YEKKfetXQzDGoLafNEAK6YCMo_Tpnxd5NKL1I1jiKD5jrnTJ57EjhgmM2dyhz9vh2CAZeq_4HbjBz8nbxDGRNvFFODaZyW1ftTdvOzcHm8Y4AN7i1xGMrCIqJTkl4PfWJgCv-lsw5s_7fdGbgbiPthOcssroZffX0JnRUJCjeBJNcAg2rTmALJCCHN_6Ehpj1B0EqgQVVXxkE8D4iH6beOCT5tPnTpXuWFMcA7QUkmHJuzndNQPm-ev_ZEiZB9Lje4-HlIAlGxu1TuhC6BxVlgwaJo9DcvUoNkg"
     ibm_url = "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/8bfc23d0-516b-4392-9635-7d786d7c3067/predictions?version=2021-07-28"
     var payload = JSON.stringify(valores_finales);
+    
     var peticion = new XMLHttpRequest(); 
     peticion.onreadystatechange = function() {
         if (peticion.readyState == XMLHttpRequest.DONE) {
-            //alert(peticion.responseText);
+            //alert(peticion.responseText)
+            console.log(peticion.responseText);
             res_2_json = JSON.parse(peticion.responseText)
             clasificacion = res_2_json["predictions"][0]["values"][0][0];
         }
@@ -307,22 +309,24 @@ async function analizar() {
 
 }
 
+
 async function generar_token() {
-    let token_url = "https://cloud.ibm.com/iam/identity/token"
-    let ibm_api_key = "MSZFK8CANRPJN10iLjoLmuX1lsr6uDz-M55G5a6UQlMA"
-    let token_object = {"apikey": ibm_api_key, "grant_type": "urn:ibm:params:oauth:grant-type:apikey"}
-    let token_request = JSON.stringify(token_object);
-    let peticion2 = new XMLHttpRequest(); 
-    peticion2.onreadystatechange = function() {
-        if (peticion2.readyState == XMLHttpRequest.DONE) {
-            alert(peticion2.responseText);
-            console.log(peticion2.responseText)
-            //res_2_json = JSON.parse(peticion2.responseText)
-        }
-    }
-    peticion2.open("GET", token_url);
-    //peticion2.setRequestHeader("Content-Type", "application/json");
-    peticion2.send(token_request);
+    var ibm_api_key = "MSZFK8CANRPJN10iLjoLmuX1lsr6uDz-M55G5a6UQlMA"
+
+    var token_url = "https://iam.ng.bluemix.net/identity/token";
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", token_url);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.setRequestHeader("Authorization", "Basic Yng6Yng=");
+    xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+        console.log(xhr.status);
+        token = xhr.responseText["access_token"]
+        console.log(xhr.responseText);
+    }};
+    var data = "apikey=" + ibm_api_key + "&grant_type=urn%3Aibm%3Aparams%3Aoauth%3Agrant-type%3Aapikey";
+    xhr.send(data);
 }
 
 async function mostrar_resultados(){
@@ -423,6 +427,11 @@ $("#form").submit(function(event) {
 })
 
 $("#boton_analizar").click(function(event) {
-    analizar().then(mostrar_resultados)
+    analizar()
+    event.preventDefault()
+})
+
+$("#boton_mostrar_res").click(function(event) {
+    mostrar_resultados()
     event.preventDefault()
 })
