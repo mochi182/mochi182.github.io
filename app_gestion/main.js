@@ -1,9 +1,3 @@
-//1. llamada al api de youtube
-//2. ordena los comentarios descripcion y titulo
-//3. convierte eso a numeritos
-//4. envia a api del modelo ya entrenado
-//5. presenta resultado
-
 /* ------------------------------ PARA LIMPIAR TEXTO ------------------------------ */
 
 class LimpiarTexto{
@@ -244,28 +238,61 @@ async function analizar() {
     var similitudCoseno2 = new SimilitudCoseno(clases, texto_descripciones)
     var similitudCoseno3 = new SimilitudCoseno(clases, texto_descripciones)
 
-    var valores_finales = {}
+    var valores_finales = {
+        "input_data":[
+            {
+                "fields":[],
+                "values":[[]]
+            }
+        ]
+    }
     var simil_titulos = similitudCoseno1.calcular()
     var simil_descripciones = similitudCoseno2.calcular()
     var simil_comentarios = similitudCoseno3.calcular()
 
+    var values = [[]]
+    var fields = []
     for (const key in simil_titulos) {
         let key2 = "titulo(" + key + ")"
-        valores_finales[key2] = simil_titulos[key]
+        //valores_finales[key2] = simil_titulos[key]
+        fields.push(key2)
+        values[0].push(simil_titulos[key])
     }
     for (const key in simil_descripciones) {
         let key2 = "descripcion(" + key + ")"
-        valores_finales[key2] = simil_descripciones[key]
+        //valores_finales[key2] = simil_descripciones[key]
+        fields.push(key2)
+        values[0].push(simil_descripciones[key])
     }
     for (const key in simil_comentarios) {
         let key2 = "comentarios(" + key + ")"
-        valores_finales[key2] = simil_comentarios[key]
+        //valores_finales[key2] = simil_comentarios[key]
+        fields.push(key2)
+        values[0].push(simil_comentarios[key])
     }
+    valores_finales["input_data"][0]["fields"] = fields
+    valores_finales["input_data"][0]["values"] = values
+    //alert(values[0].length)
+    //alert(fields.length)
 
+    let token = "Bearer eyJraWQiOiIyMDIxMDcxOTE4MzciLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJJQk1pZC02NzYwMDA1VDVSIiwiaWQiOiJJQk1pZC02NzYwMDA1VDVSIiwicmVhbG1pZCI6IklCTWlkIiwianRpIjoiNjZiMDhmZGItMmJjZi00Zjc0LWFjYWMtMGE1YTIwNzBjNjA0IiwiaWRlbnRpZmllciI6IjY3NjAwMDVUNVIiLCJnaXZlbl9uYW1lIjoiQXJpc3RpZGVzIiwiZmFtaWx5X25hbWUiOiJJc2F6YSIsIm5hbWUiOiJBcmlzdGlkZXMgSXNhemEiLCJlbWFpbCI6ImFyaXN0aWRlcy5pc2F6YUB1dHAuYWMucGEiLCJzdWIiOiJhcmlzdGlkZXMuaXNhemFAdXRwLmFjLnBhIiwiYXV0aG4iOnsic3ViIjoiYXJpc3RpZGVzLmlzYXphQHV0cC5hYy5wYSIsImlhbV9pZCI6IklCTWlkLTY3NjAwMDVUNVIiLCJuYW1lIjoiQXJpc3RpZGVzIElzYXphIiwiZ2l2ZW5fbmFtZSI6IkFyaXN0aWRlcyIsImZhbWlseV9uYW1lIjoiSXNhemEiLCJlbWFpbCI6ImFyaXN0aWRlcy5pc2F6YUB1dHAuYWMucGEifSwiYWNjb3VudCI6eyJib3VuZGFyeSI6Imdsb2JhbCIsInZhbGlkIjp0cnVlLCJic3MiOiJiMjViNWI1ZjcyYTg0MjQ4YjkwN2E3YWM2YWE0NjBjMCIsImZyb3plbiI6dHJ1ZX0sImlhdCI6MTYyNzQ0NDc3NiwiZXhwIjoxNjI3NDQ4Mzc2LCJpc3MiOiJodHRwczovL2lhbS5jbG91ZC5pYm0uY29tL2lkZW50aXR5IiwiZ3JhbnRfdHlwZSI6InVybjppYm06cGFyYW1zOm9hdXRoOmdyYW50LXR5cGU6YXBpa2V5Iiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiZGVmYXVsdCIsImFjciI6MSwiYW1yIjpbInB3ZCJdfQ.3I3BB6oHd2YQfnYLrDHYxFXpzfftMWB2yqgbfj0A82DtaRb9J_m16fim6LJEpBS7XjTgqrg3Uojm2WIVTigYO9t3_P8TlVG1iTfj0KwQSDHow9r9kHvIPwTAmlDmuMNA5TBRAb47c-B0Gq0NvzlvJlUtZdqznfCI4U6TJ4RvZLsZgs1EA7yu9QKGyx54TcfOEv6Xy40sRrt8aHSoppwfPnJ4AgNIefpjUh4SJ6H5wWvn1iyQ27XSKN0JNnmtqJytGFsuPuPYt5a3ExLm9fryF5HS9lvmTNove73FgQ6jd6nET4_ZIXwSLhgCRK3NsTBkGuLGh7Phb0toilUl-80yGA"
+    let header = {'Content-Type': 'application/json', 'Authorization': token}
+    var payload = "json_name=" + JSON.stringify(valores_finales);
+    var peticion = new XMLHttpRequest();   // new HttpRequest instance
+    peticion.onreadystatechange = function() {
+        if (peticion.readyState == XMLHttpRequest.DONE) {
+            alert(peticion.responseText);
+        }
+    }
+    peticion.open("GET", "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/8bfc23d0-516b-4392-9635-7d786d7c3067/predictions?version=2021-07-28?version=2021-07-28");
+    peticion.setRequestHeader("Authorization", token);
+    peticion.send(payload);
+
+    /*
     for (const key in valores_finales) {
         alert(key)
         alert(valores_finales[key])
-    }
+    } */
 
     /*
     url_3 = "watson studio"
@@ -280,6 +307,7 @@ async function analizar() {
 //var clases = [ "technology", "music", "food", "travel", "videogames", "football", "science", "anime"]
 var cantidad_comentarios = 8
 
+var api_key = ""
 var nombre_canal = ""
 var lista_titulos = []
 var lista_descripciones = []
@@ -298,7 +326,7 @@ var clases = { 'technology' : ['drive', 'text', 'type', 'word', 'processing', 'c
 
 $("#form").submit(function(event) {
     var channelId = $("#canal").val();
-    var api_key = $("#llave").val();
+    api_key = $("#llave").val();
     llamada1(channelId, api_key).then(llamada2).then(llamada3)
     event.preventDefault()
 }) 
