@@ -10,49 +10,74 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
 
 </head>
 <body>
 
-    <div class="container">
+    <div class="container fondo1">
 
-        <center>
-            <img src="http://images6.fanpop.com/image/photos/42700000/Cute-anime-cat-random-42791828-564-550.jpg" alt="">
-            <h1 style="color:red">YouCat</h1>
-            <h3>
-                Categorizador de canales de Youtube
-            </h3>
-        </center>
-        <ul>
-            <li>Aristides Isaza ()</li>
-            <li>José Sieiro ()</li>
-            <li>Francisco Pérez (8-841-1013)</li>
-        </ul>
+        <div class="">
+            <center>
+                <img src="cat.jpg" id="cat_img">
+                <h1>YouCat</h1>
+                <h3>
+                    Categorizador de canales de Youtube
+                </h3>
+                <h6 class="text-muted">
+                    Proyecto final de gestión de la información
+                </h6>
+            </center>
+        </div>
 
-        <h4>Ingresa un canal de youtube:</h4>
+        <br>
+        <br>
         <form id="form">
-            Canal:
-            <div class="form-group">
-                <input type="text" class="form-control" value="UCd21m0AHf4Vx88Znty7v4Cw" id="canal">
+            <div class="row">
+                <div class="col">
+                    Canal de YouTube:
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">www.youtube.com/channel/</span>
+                        </div>
+                        <input type="text" class="form-control" value="UCd21m0AHf4Vx88Znty7v4Cw" id="canal" required>
+                    </div>
+                </div>
+                <div class="col">
+                    Llave del API de YouTube:
+                    <div class="form-group">
+                        <input type="text" class="form-control" value="" id="llave" required>
+                    </div>
+                </div>
             </div>
 
-            Llave del API:
-            <div class="form-group">
-                <input type="text" class="form-control" value="" id="llave">
-            </div>
 
-            <div class="form-group">
-                <input type="submit" value="Obtener datos" class="" id="boton">
-            </div>
+            <center class="form-group">
+                <input type="submit" value="Obtener datos" id="boton" class="btn btn-primary mr-3">
+
+                <button id="boton_analizar" class="btn btn-primary ml-3">Analizar resultados</button>
+            </center>
         </form>
 
+        <script src="main.js"></script>
+
+        <br>
+        <br>
+        <div id="resultados">
+
+        </div>
+
+        <br>
+        <ul>
+            <li>Aristides Isaza (8-830-877)</li>
+            <li>José Sieiro (8-828-581)</li>
+            <li>Francisco Pérez (8-841-1013)</li>
+        </ul>
+        <button onclick="generar_token()" class="btn btn-light">Token de IBM</button>
     </div>
-
-    <button onclick="analizar()">ANALIZAR AQUI DESPUES DE 5 SEGUNDOS</button>
-
-    <script src="main.js"></script>
 </body>
 </html>

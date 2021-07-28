@@ -256,49 +256,137 @@ async function analizar() {
         let key2 = "titulo(" + key + ")"
         //valores_finales[key2] = simil_titulos[key]
         fields.push(key2)
-        values[0].push(simil_titulos[key])
+
+        if (simil_titulos[key] == 0) {
+            values[0].push(null)
+        } else {
+            values[0].push(simil_titulos[key])
+        }
     }
     for (const key in simil_descripciones) {
         let key2 = "descripcion(" + key + ")"
         //valores_finales[key2] = simil_descripciones[key]
         fields.push(key2)
-        values[0].push(simil_descripciones[key])
+
+        if (simil_titulos[key] == 0) {
+            values[0].push(null)
+        } else {
+            values[0].push(simil_descripciones[key])
+        }
     }
     for (const key in simil_comentarios) {
         let key2 = "comentarios(" + key + ")"
         //valores_finales[key2] = simil_comentarios[key]
         fields.push(key2)
-        values[0].push(simil_comentarios[key])
+
+        if (simil_titulos[key] == 0) {
+            values[0].push(null)
+        } else {
+            values[0].push(simil_comentarios[key])
+        }
     }
     valores_finales["input_data"][0]["fields"] = fields
     valores_finales["input_data"][0]["values"] = values
-    //alert(values[0].length)
-    //alert(fields.length)
+    console.log(JSON.stringify(valores_finales))
 
-    let token = "Bearer eyJraWQiOiIyMDIxMDcxOTE4MzciLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJJQk1pZC02NzYwMDA1VDVSIiwiaWQiOiJJQk1pZC02NzYwMDA1VDVSIiwicmVhbG1pZCI6IklCTWlkIiwianRpIjoiNjZiMDhmZGItMmJjZi00Zjc0LWFjYWMtMGE1YTIwNzBjNjA0IiwiaWRlbnRpZmllciI6IjY3NjAwMDVUNVIiLCJnaXZlbl9uYW1lIjoiQXJpc3RpZGVzIiwiZmFtaWx5X25hbWUiOiJJc2F6YSIsIm5hbWUiOiJBcmlzdGlkZXMgSXNhemEiLCJlbWFpbCI6ImFyaXN0aWRlcy5pc2F6YUB1dHAuYWMucGEiLCJzdWIiOiJhcmlzdGlkZXMuaXNhemFAdXRwLmFjLnBhIiwiYXV0aG4iOnsic3ViIjoiYXJpc3RpZGVzLmlzYXphQHV0cC5hYy5wYSIsImlhbV9pZCI6IklCTWlkLTY3NjAwMDVUNVIiLCJuYW1lIjoiQXJpc3RpZGVzIElzYXphIiwiZ2l2ZW5fbmFtZSI6IkFyaXN0aWRlcyIsImZhbWlseV9uYW1lIjoiSXNhemEiLCJlbWFpbCI6ImFyaXN0aWRlcy5pc2F6YUB1dHAuYWMucGEifSwiYWNjb3VudCI6eyJib3VuZGFyeSI6Imdsb2JhbCIsInZhbGlkIjp0cnVlLCJic3MiOiJiMjViNWI1ZjcyYTg0MjQ4YjkwN2E3YWM2YWE0NjBjMCIsImZyb3plbiI6dHJ1ZX0sImlhdCI6MTYyNzQ0NDc3NiwiZXhwIjoxNjI3NDQ4Mzc2LCJpc3MiOiJodHRwczovL2lhbS5jbG91ZC5pYm0uY29tL2lkZW50aXR5IiwiZ3JhbnRfdHlwZSI6InVybjppYm06cGFyYW1zOm9hdXRoOmdyYW50LXR5cGU6YXBpa2V5Iiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiZGVmYXVsdCIsImFjciI6MSwiYW1yIjpbInB3ZCJdfQ.3I3BB6oHd2YQfnYLrDHYxFXpzfftMWB2yqgbfj0A82DtaRb9J_m16fim6LJEpBS7XjTgqrg3Uojm2WIVTigYO9t3_P8TlVG1iTfj0KwQSDHow9r9kHvIPwTAmlDmuMNA5TBRAb47c-B0Gq0NvzlvJlUtZdqznfCI4U6TJ4RvZLsZgs1EA7yu9QKGyx54TcfOEv6Xy40sRrt8aHSoppwfPnJ4AgNIefpjUh4SJ6H5wWvn1iyQ27XSKN0JNnmtqJytGFsuPuPYt5a3ExLm9fryF5HS9lvmTNove73FgQ6jd6nET4_ZIXwSLhgCRK3NsTBkGuLGh7Phb0toilUl-80yGA"
-    let header = {'Content-Type': 'application/json', 'Authorization': token}
-    var payload = "json_name=" + JSON.stringify(valores_finales);
-    var peticion = new XMLHttpRequest();   // new HttpRequest instance
+    token = "eyJraWQiOiIyMDIxMDcxOTE4MzciLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJJQk1pZC02NzYwMDA1VDVSIiwiaWQiOiJJQk1pZC02NzYwMDA1VDVSIiwicmVhbG1pZCI6IklCTWlkIiwianRpIjoiYjg2YWMzOTktNzg0NC00OGVlLTlmNDctZDVhYTdkMjBmOTExIiwiaWRlbnRpZmllciI6IjY3NjAwMDVUNVIiLCJnaXZlbl9uYW1lIjoiQXJpc3RpZGVzIiwiZmFtaWx5X25hbWUiOiJJc2F6YSIsIm5hbWUiOiJBcmlzdGlkZXMgSXNhemEiLCJlbWFpbCI6ImFyaXN0aWRlcy5pc2F6YUB1dHAuYWMucGEiLCJzdWIiOiJhcmlzdGlkZXMuaXNhemFAdXRwLmFjLnBhIiwiYXV0aG4iOnsic3ViIjoiYXJpc3RpZGVzLmlzYXphQHV0cC5hYy5wYSIsImlhbV9pZCI6IklCTWlkLTY3NjAwMDVUNVIiLCJuYW1lIjoiQXJpc3RpZGVzIElzYXphIiwiZ2l2ZW5fbmFtZSI6IkFyaXN0aWRlcyIsImZhbWlseV9uYW1lIjoiSXNhemEiLCJlbWFpbCI6ImFyaXN0aWRlcy5pc2F6YUB1dHAuYWMucGEifSwiYWNjb3VudCI6eyJib3VuZGFyeSI6Imdsb2JhbCIsInZhbGlkIjp0cnVlLCJic3MiOiJiMjViNWI1ZjcyYTg0MjQ4YjkwN2E3YWM2YWE0NjBjMCIsImZyb3plbiI6dHJ1ZX0sImlhdCI6MTYyNzQ1MTQ0MCwiZXhwIjoxNjI3NDU1MDQwLCJpc3MiOiJodHRwczovL2lhbS5jbG91ZC5pYm0uY29tL2lkZW50aXR5IiwiZ3JhbnRfdHlwZSI6InVybjppYm06cGFyYW1zOm9hdXRoOmdyYW50LXR5cGU6YXBpa2V5Iiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiZGVmYXVsdCIsImFjciI6MSwiYW1yIjpbInB3ZCJdfQ.o6_wL7VZnur33RZD7Kv-D4zK9Kzl6hLkUFGijEUBvx9LjOnxfxMwN4yL3P5uRu4ONXXPGrXCHa1uzi2gHnQrl0eyNK2CTv_028UdKS8O5wBykHS3ts-Xn_GbltzFOYpTA_wFzcRlD0dl02Ok0Pe_68I_D01DMuMfnToOf4SETspXWuZ9_1AVaDezwEcBsbJvfrngXtB0SNxrMpIci93SrQiUIVrMpmeQIO74-6DPG4mmzVftXyuhwh6Z4o1tLrbESF7yIsqv2qwJhmleYoHLUpb8OFfhrwjzLosSDY3abiU7RI59pZv0BXMGcEXqn8wxt5YN7L85IbFNHXt398k8cg"
+    ibm_url = "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/8bfc23d0-516b-4392-9635-7d786d7c3067/predictions?version=2021-07-28"
+    var payload = JSON.stringify(valores_finales);
+    var peticion = new XMLHttpRequest(); 
     peticion.onreadystatechange = function() {
         if (peticion.readyState == XMLHttpRequest.DONE) {
-            alert(peticion.responseText);
+            //alert(peticion.responseText);
+            res_2_json = JSON.parse(peticion.responseText)
+            clasificacion = res_2_json["predictions"][0]["values"][0][0];
         }
     }
-    peticion.open("GET", "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/8bfc23d0-516b-4392-9635-7d786d7c3067/predictions?version=2021-07-28?version=2021-07-28");
-    peticion.setRequestHeader("Authorization", token);
+    peticion.open("POST", ibm_url);
+    peticion.setRequestHeader("Content-Type", "application/json");
+    peticion.setRequestHeader("Authorization", "Bearer " + token);
     peticion.send(payload);
 
-    /*
-    for (const key in valores_finales) {
-        alert(key)
-        alert(valores_finales[key])
-    } */
+}
 
-    /*
-    url_3 = "watson studio"
-    const respuesta = await fetch(url_3)
-    const  peticion3 =  respuesta.json()
-    return peticion3*/
+async function generar_token() {
+    let token_url = "https://cloud.ibm.com/iam/identity/token"
+    let ibm_api_key = "MSZFK8CANRPJN10iLjoLmuX1lsr6uDz-M55G5a6UQlMA"
+    let token_object = {"apikey": ibm_api_key, "grant_type": "urn:ibm:params:oauth:grant-type:apikey"}
+    let token_request = JSON.stringify(token_object);
+    let peticion2 = new XMLHttpRequest(); 
+    peticion2.onreadystatechange = function() {
+        if (peticion2.readyState == XMLHttpRequest.DONE) {
+            alert(peticion2.responseText);
+            console.log(peticion2.responseText)
+            //res_2_json = JSON.parse(peticion2.responseText)
+        }
+    }
+    peticion2.open("GET", token_url);
+    //peticion2.setRequestHeader("Content-Type", "application/json");
+    peticion2.send(token_request);
+}
+
+async function mostrar_resultados(){
+    let tabla_res = `
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="2">
+                    <h3>Resultados</h3>
+                </th>
+            </tr>
+        </thead>
+        <tr>
+            <td>
+                <h4>Nombre</h4>
+            </td>
+            <td>
+                ${nombre_canal}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Títulos</h4>
+            </td>
+            <td>
+                <div class="blob">
+                    ${texto_titulos}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Descripciones</h4>
+            </td>
+            <td>
+                <div class="blob">
+                    ${texto_descripciones}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Comentarios</h4>
+            </td>
+            <td>
+                <div class="blob">
+                    ${texto_comentarios}
+                </div>
+            </td>
+        </tr>
+        <tr class="table-success">
+            <td>
+                <h4>Categoría</h4>
+            </td>
+            <td>
+                <div class="blob">
+                    ${clasificacion}
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+    `
+    $("#resultados").append(tabla_res)
 }
 
 
@@ -306,6 +394,9 @@ async function analizar() {
 
 //var clases = [ "technology", "music", "food", "travel", "videogames", "football", "science", "anime"]
 var cantidad_comentarios = 8
+var token = ""
+var clasificacion = ""
+var ibm_url = ""
 
 var api_key = ""
 var nombre_canal = ""
@@ -329,4 +420,9 @@ $("#form").submit(function(event) {
     api_key = $("#llave").val();
     llamada1(channelId, api_key).then(llamada2).then(llamada3)
     event.preventDefault()
-}) 
+})
+
+$("#boton_analizar").click(function(event) {
+    analizar().then(mostrar_resultados)
+    event.preventDefault()
+})

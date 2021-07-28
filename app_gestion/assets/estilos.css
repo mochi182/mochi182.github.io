@@ -1,0 +1,15 @@
+/* ----- Estilos ----- */
+
+@import url("https://fonts.googleapis.com/css?family=Jost&display=swap");
+
+body{
+    font-family: "Jost", sans-serif;
+}
+
+img {
+    width: 200px;
+    border-radius: 10px;
+}
+body {
+    color: red;
+}
