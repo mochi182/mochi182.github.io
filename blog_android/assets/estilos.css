@@ -4,6 +4,7 @@
 
 body{
     font-family: "Jost", sans-serif;
+    text-align: justify;
 }
 
 #cat_img {
@@ -12,7 +13,7 @@ body{
 }
 
 body {
-    background: linear-gradient(283deg, rgba(92,219,205,1) 0%, rgba(65,133,170,1) 34%, rgba(237,94,221,1) 40%, rgba(209,147,195,1) 62%, rgba(114,179,224,1) 73%, rgba(0,0,0,1) 97%, rgba(0,0,0,1) 97%, rgba(0,0,0,1) 98%);
+    background: linear-gradient(281deg, rgba(92,219,205,1) 0%, rgba(65,133,170,1) 34%, rgb(70, 138, 191) 40%, rgba(209,147,195,1) 62%, rgba(114,179,224,1) 73%, rgba(0,0,0,1) 97%, rgba(0,0,0,1) 97%, rgb(55, 68, 68)98%);
 
 }
 
@@ -34,4 +35,42 @@ tr {
 
 .btn {
     width: 160px;
+}
+
+.cuadro {
+    border: 5px solid #eee;
+}
+
+.cuadro2 {
+    vertical-align: middle;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    text-align: justify;
+}
+
+#devices {
+    width: 900px;
+}
+
+#primer {
+    border-radius: 15px;
+}
+
+h1,h2,h3,h4,h5 {
+    color: rgb(66, 85, 196);
+}
+
+img.fotos {
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
 }
