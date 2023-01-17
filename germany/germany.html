@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alemania</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+    <style type='text/css'>
+        ul {
+            list-style-type: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margins */
+        }
+
+        body {
+            padding: 20px;
+        }
+        .tabs-menu {
+            float: left;
+        }
+
+        .tabs-menu li {
+            line-height: 30px;
+            float: left;
+            margin-right: 10px;
+            border-top: 1px solid #d4d4d1;
+            border-right: 1px solid #d4d4d1;
+            border-left: 1px solid #d4d4d1;
+        }
+        .tabs-menu li.current {
+            position: relative;
+        }
+
+        .tabs-menu li a {
+            padding-left: 5px;
+            padding-right: 5px;
+            text-decoration: none;
+        }
+
+        .tab {
+            border: 1px solid #d4d4d1;
+            background-color: #fff;
+            float: left;
+            width: auto;
+        }
+        .tab-content {
+            width: 660px;
+            padding: 20px;
+            display: none;
+        }
+
+        #tab-1 {
+            display: block;
+        }
+
+        input {
+            margin-right: 10px;
+        }
+
+        img {
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <center>
+        <h2>
+            Alemania
+        </h2>
+        <img src="duke.jpeg" alt="">
+    </center>
+
+    <br><br>
+
+    <div id="tabs-container">
+
+        <ul class="tabs-menu">
+            <li class="current"><a href="#tab-1" data-toggle="tab">Lugares</a></li>
+            <li class="nav"><a href="#tab-2" data-toggle="tab">Comida</a></li>
+            <li class="nav"><a href="#tab-3" data-toggle="tab">Mercados</a></li>
+            <li class="nav"><a href="#tab-4" data-toggle="tab">Música</a></li>
+            <li class="nav"><a href="#tab-5" data-toggle="tab">Fútbol</a></li>
+            <li class="nav"><a href="#tab-6" data-toggle="tab">Tecnología</a></li>
+        </ul>
+
+        <br>
+
+        <div class="tab"></div>
+            <section id="tab-1" class="tab-content">
+                <h4>
+                    Lugares
+                </h4>
+                <p>
+                    If you're visiting Cottbus, Germany and have a month to explore, there are many things you can do to satisfy your diverse interests. Here are a few suggestions:
+                </p>
+                <ul>
+                    <li><input type="checkbox" name="Nature" value="Nature">Nature: Take a day trip to Spreewald, a UNESCO Biosphere Reserve known for its picturesque landscape of canals, rivers, and forests.</li>
+                    <li><input type="checkbox" name="Architecture" value="Architecture">Architecture: Visit the city of Dresden, which is known for its beautiful baroque architecture and reconstructed historic center.</li>
+                    <li><input type="checkbox" name="Museums" value="Museums">Museums: Check out the Museum of Natural History in Berlin, which has a large collection of specimens from around the world.</li>
+                    <li><input type="checkbox" name="Music" value="Music">Music: Attend a classical concert at the Berlin Philharmonic, one of the world's most famous orchestras.</li>
+                    <li><input type="checkbox" name="Food" value="Food">Food: Try traditional German dishes like schnitzel and sauerkraut in the cities of Berlin, Vienna and Prague.</li>
+                    <li><input type="checkbox" name="Arts" value="Arts">Arts: Visit the National Gallery in Berlin, which has a large collection of European paintings from the 13th century to the present.</li>
+                    <li><input type="checkbox" name="Technology" value="Technology">Technology: Visit the Siemens Technikmuseum in Berlin, which showcases the history of technology and science.</li>
+                    <li><input type="checkbox" name="Software" value="Software">Software: Visit the Museum for Communication in Frankfurt, which has a collection of artifacts related to the history of communication technology.</li>
+                    <li><input type="checkbox" name="Astronomy" value="Astronomy">Astronomy: Visit the Berlin Planetarium, which offers shows and exhibits on astronomy and space science.</li>
+                    <li><input type="checkbox" name="History" value="History">History: Visit the Memorial to the Murdered Jews of Europe in Berlin, which honors the victims of the Holocaust.</li>
+                    <li><input type="checkbox" name="Visit the Czech Republic" value="Visit the Czech Republic">Visit the Czech Republic, you can visit the Old Town of Prague, which has a beautiful collection of Gothic, Renaissance and Baroque architecture.</li>
+                    <li><input type="checkbox" name="Visit the Poland" value="Visit the Poland">Visit the Poland, you can visit the Wawel Castle in Krakow, which is a beautiful renaissance castle.</li>
+                    <li><input type="checkbox" name="Visit the Austria" value="Visit the Austria">Visit the Austria, you can visit the Schönbrunn Palace in Vienna, which is a beautiful baroque palace.</li>
+                </ul>
+
+                <hr>
+
+                <h4>
+                    Castillos
+                </h4>
+
+                <ul>
+                    <li><input type="checkbox" name="Burg Cottbus" value="Burg Cottbus">Burg Cottbus: Located in Cottbus, Germany, Burg Cottbus is a medieval castle that dates back to the 12th century.</li>
+                    <li><input type="checkbox" name="Schloss Branitz" value="Schloss Branitz">Schloss Branitz: Located in Branitz, Germany, Schloss Branitz is a castle built in the 17th century and designed by the famous architect Karl Friedrich Schinkel.</li>
+                    <li><input type="checkbox" name="Ksiaz Castle" value="Ksiaz Castle">Ksiaz Castle: Located in Walbrzych, Poland, Ksiaz Castle is a large castle built in the 14th century.</li>
+                    <li><input type="checkbox" name="Wawel Castle" value="Wawel Castle">Wawel Castle: Located in Krakow, Poland, Wawel Castle is a beautiful renaissance castle that was once the residence of Polish kings.</li>
+                    <li><input type="checkbox" name="Schönbrunn Palace" value="Schönbrunn Palace">Schönbrunn Palace: Located in Vienna, Austria, Schönbrunn Palace is a beautiful baroque palace that was once the summer residence of the Habsburgs.</li>
+                    <li><input type="checkbox" name="Prague Castle" value="Prague Castle">Prague Castle: Located in Prague, Czech Republic, Prague Castle is a large castle complex that dates back to the 9th century, it's the residence of the Czech kings and it's one of the most visited site in the city.</li>
+                    <li><input type="checkbox" name="Hluboká Castle" value="Hluboká Castle">Hluboká Castle: Located in Hluboká nad Vltavou, Czech Republic, Hluboká Castle is a beautiful castle built in the 19th century in a neo-Gothic style.</li>
+                    <li><input type="checkbox" name="Hrad Karlstejn" value="Hrad Karlstejn">Hrad Karlstejn: Located in Karlstejn, Czech Republic, Hrad Karlstejn is a 14th-century castle that was founded by Charles IV, king of Bohemia and Holy Roman Emperor.</li>
+                    <li><input type="checkbox" name="Lichtenstein Castle" value="Lichtenstein Castle">Lichtenstein Castle: Located in Honau, Germany, Lichtenstein Castle is a medieval castle built in the 14th century.</li>
+                    <li><input type="checkbox" name="Burg Hohenzollern" value="Burg Hohenzollern">Burg Hohenzollern: Located in Hechingen, Germany, Burg Hohenzollern is a castle built in the 11th century and it's the ancestral seat of the Hohenzollern family, the former rulers of Prussia.</li>
+                </ul>
+
+                <hr>
+
+                <h4>
+                    Top 7 Alemania
+                </h4>
+                <p>
+                    Germany is home to many beautiful and historically significant landmarks and monuments. However, there is no official list of the "7 wonders of Germany." Here are some of the most notable and popular landmarks and monuments that are considered as "wonders" of Germany:
+                </p>
+                <ul>
+                    <li><input type="checkbox" name="Neuschwanstein Castle" value="Neuschwanstein Castle">Neuschwanstein Castle: A 19th-century castle built by King Ludwig II, located in the Bavarian Alps. It's considered one of the most famous castles in the world, and inspiration for Disneyland's Sleeping Beauty castle.</li>
+                    <li><input type="checkbox" name="Brandenburg Gate" value="Brandenburg Gate">Brandenburg Gate: A 18th-century triumphal arch located in Berlin, it's one of the most iconic landmarks of Germany and it's a symbol of the German reunification.</li>
+                    <li><input type="checkbox" name="Berlin Wall" value="Berlin Wall">Berlin Wall: The remains of the wall that once divided East and West Berlin. It's a symbol of the Cold War and the division of Germany.</li>
+                    <li><input type="checkbox" name="The Zugspitze" value="The Zugspitze">The Zugspitze: The highest mountain in Germany, located in the Bavarian Alps. It offers beautiful views and it's a popular spot for hiking and skiing.</li>
+                    <li><input type="checkbox" name="The Rhine river" value="The Rhine river">The Rhine river: One of the most important river of Germany, it runs through the country and it's considered one of the most picturesque and romantic places in Germany.</li>
+                    <li><input type="checkbox" name="The Black Forest" value="The Black Forest">The Black Forest: A large forested area in southern Germany, known for its picturesque landscapes, traditional villages, and clock-making industry.</li>
+                    <li><input type="checkbox" name="The Berlin Cathedral" value="The Berlin Cathedral">The Berlin Cathedral: A beautiful cathedral located in Berlin, it's considered one of the most important landmarks of Berlin and one of the most important Protestant churches in Germany.</li>
+                </ul>
+            </section>
+
+            
+            <section id="tab-2" class="tab-content">
+                <h4>Comida</h4>
+
+                <h4>
+                    Comidas alemanas:
+                </h4>
+            
+                <ul>
+                    <li><input type="checkbox" name="schnitzel" value="schnitzel">Schnitzel: Thin slices of pork or veal, breaded and fried, often served with a side of fries and lingonberry jam.</li>
+                    <li><input type="checkbox" name="bratwurst" value="bratwurst">Bratwurst: A type of sausage that comes in different varieties, typically made from pork and beef. It is often served with a side of sauerkraut and mustard.</li>
+                    <li><input type="checkbox" name="rindfleisch" value="rindfleisch">Rindfleisch: A type of beef stew made with vegetables, bacon, and spices. It's usually served with dumplings or potatoes.</li>
+                    <li><input type="checkbox" name="kartoffelpuffer" value="kartoffelpuffer">Kartoffelpuffer: Potato pancakes, often served as a side dish or a snack, they can be topped with apple sauce or sour cream.</li>
+                    <li><input type="checkbox" name="schweinshaxe" value="schweinshaxe">Schweinshaxe: A roasted pork knuckle, often served with sauerkraut and potato dumplings.</li>
+                    <li><input type="checkbox" name="spätzle" value="spätzle">Spätzle: A type of soft egg noodle that is often served with various types of meat dishes, including Rindfleisch.</li>
+                    <li><input type="checkbox" name="schweinsbraten" value="schweinsbraten">Schweinsbraten: A slow-roasted pork shoulder, often served with gravy and dumplings or potatoes.</li>
+                    <li><input type="checkbox" name="leberknödel" value="leberknödel">Leberknödel: A type of dumpling filled with liver, often served in a rich brown gravy.</li>
+                    <li><input type="checkbox" name="apfelstrudel" value="apfelstrudel">Apfelstrudel: A traditional German dessert made with a flaky pastry dough filled with apple, cinnamon and raisins.</li>
+                    <li><input type="checkbox" name="schwarzwälder kirschtorte" value="schwarzwälder kirschtorte">Schwarzwälder Kirschtorte: A chocolate cake with a cherry filling, it's one of the most famous German cake.</li>
+                </ul>
+
+                <hr>
+            
+                <h4>
+                    Comidas polacas:
+                </h4>
+            
+                <ul>
+                    <li><input type="checkbox" name="Pierogi" value="Pierogi">Pierogi: a type of dumpling, they can be filled with meat, cheese, potatoes, or sauerkraut and they are often served with sour cream.</li>
+                    <li><input type="checkbox" name="Bigos" value="Bigos">Bigos: A type of stew made from sauerkraut, meat, and various vegetables.</li>
+                    <li><input type="checkbox" name="Kotlet schabowy" value="Kotlet schabowy">Kotlet schabowy: A breaded and fried pork cutlet, often served with potatoes and a variety of vegetables.</li>
+                    <li><input type="checkbox" name="Kielbasa" value="Kielbasa">Kielbasa: A type of sausage that comes in different varieties and it's a popular dish throughout Poland.</li>
+                    <li><input type="checkbox" name="Zapiekanka" value="Zapiekanka">Zapiekanka: A type of pizza, it's a popular street food in Poland, topped with mushrooms, cheese and ketchup.</li>
+                    <li><input type="checkbox" name="Paczki" value="Paczki">Paczki: a traditional Polish doughnut, often filled with rosehip or apricot jam, covered with powdered sugar or icing.</li>
+                </ul>
+
+                <hr>
+            
+                <h4>
+                    Comidas checas:
+                </h4>
+            
+                <ul>
+                    <li><input type="checkbox" name="Pilsner Urquell" value="Pilsner Urquell">Pilsner Urquell: a type of beer, it's one of the most famous beer in the world, originated in the city of Plzen, Czech Republic.</li>
+                    <li><input type="checkbox" name="Knedlíky" value="Knedlíky">Knedlíky: dumplings that are typically made from flour, potatoes, or bread and can be served as a side dish or as a topping for a variety of meats and sauces.</li>
+                    <li><input type="checkbox" name="Smažený sýr" value="Smažený sýr">Smažený sýr: Fried cheese, it's a popular dish that consists of breaded and fried cheese, often served with potatoes and tartar sauce.</li>
+                    <li><input type="checkbox" name="Guláš" value="Guláš">Guláš: A type of stew, it's made from beef or pork, vegetables, and a variety of spices.</li>
+                    <li><input type="checkbox" name="Trdelník" value="Trdelník">Trdelník: A traditional Czech pastry made from rolled dough that is wrapped around a cylinder-shaped baking form and then grilled.</li>
+                </ul>
+
+            </section>
+
+            <section id="tab-3" class="tab-content">
+                <h4>
+                    Mercados
+                </h4>
+
+                <ul>
+                    <li><input type="checkbox" name="Christmas markets" value="Christmas markets"> Christmas markets: Many cities in Germany, Poland, and the Czech Republic have Christmas markets, which are popular during the months of November and December. While Christmas markets are not open in February, you can take a stroll around the cities and enjoy the post-Christmas atmosphere.</li>
+                    <li><input type="checkbox" name="Berliner Weihnachtszeit" value="Berliner Weihnachtszeit">Berliner Weihnachtszeit: Located in Berlin, Germany, it is one of the most popular Christmas markets in the country.</li>
+                    <li><input type="checkbox" name="Wroclavia Christmas Market" value="Wroclavia Christmas Market">Wroclavia Christmas Market: Located in Wroclaw, Poland, it is one of the most popular Christmas markets in the country.</li>
+                    <li><input type="checkbox" name="Prague Christmas Market" value="Prague Christmas Market">Prague Christmas Market: Located in Prague, Czech Republic, it is one of the most popular Christmas markets in the country.</li>
+                    <li><input type="checkbox" name="Leipzig Christmas Market" value="Leipzig Christmas Market">Leipzig Christmas Market: Located in Leipzig, Germany, it is one of the most popular Christmas markets in the country.</li>
+                    <li><input type="checkbox" name="Dresden Striezelmarkt" value="Dresden Striezelmarkt">Dresden Striezelmarkt: Located in Dresden, Germany, it is one of the most popular Christmas markets in the country.</li>
+                    <li><input type="checkbox" name="Cracow Christmas Market" value="Cracow Christmas Market">Cracow Christmas Market: Located in Krakow, Poland, it is one of the most popular Christmas markets in the country.</li>
+                    <li><input type="checkbox" name="Nuremberg Christmas Market" value="Nuremberg Christmas Market">Nuremberg Christmas Market: Located in Nuremberg, Germany, it is one of the most popular Christmas markets in the country.</li>
+                    <li><input type="checkbox" name="Wenceslas Square Christmas Market" value="Wenceslas Square Christmas Market">Wenceslas Square Christmas Market: Located in Prague, Czech Republic, it is one of the most popular Christmas markets in the country.</li>
+                    <li><input type="checkbox" name="Old Town Square Christmas Market" value="Old Town Square Christmas Market">Old Town Square Christmas Market: Located in Prague, Czech Republic, it is one of the most popular Christmas markets in the country.</li>
+                </ul>
+            </section>
+
+            
+            <section id="tab-4" class="tab-content">
+                <h4>
+                    Música
+                </h4>
+
+                <p>
+                    If you're interested in music and you're visiting Cottbus, Germany, here are a few suggestions:
+                </p>
+
+                <ul>
+                    <li><input type="checkbox" name="Electronic music" value="Electronic music">Electronic music: Visit the Berghain club in Berlin, which is considered one of the best techno clubs in the world.</li>
+                    <li><input type="checkbox" name="Music synthesis" value="Music synthesis">Visit the Museum of Music Automatons in Seiffen, Germany, which has a collection of mechanical music instruments and automatons.</li>
+                    <li><input type="checkbox" name="Music production" value="Music production">Music production: Visit the Hansa Studios in Berlin, which is a legendary recording studio where many famous electronic and rock bands have recorded their albums.</li>
+                    <li><input type="checkbox" name="Classical music" value="Classical music"> Attend a concert at the Berlin Philharmonic, one of the world's most famous orchestras.</li>
+                    <li><input type="checkbox" name="Folklore music" value="Folklore music">Folklore music: Visit the Ethnographic Museum in Krakow, Poland, which has a collection of traditional musical instruments from Poland and Eastern Europe.</li>
+                    <li><input type="checkbox" name="Visit the National Museum in Prague" value="Visit the National Museum in Prague">Visit the National Museum in Prague, Czech Republic, which has a collection of traditional musical instruments from Czech Republic and Eastern Europe.</li>
+                    <li><input type="checkbox" name="Visit the Museum of Music in Prague" value="Visit the Museum of Music in Prague">Visit the Museum of Music in Prague, Czech Republic, which has a collection of musical instruments from the Renaissance to the present day.</li>
+                    <li><input type="checkbox" name="Visit the Wroclaw Philharmonic" value="Visit the Wroclaw Philharmonic">Visit the Wroclaw Philharmonic in Poland, which is one of the most important concert halls in the country and it offers a diverse program of classical music.</li>
+                    <li><input type="checkbox" name="Visit the National Museum in Warsaw" value="Visit the National Museum in Warsaw">Visit the National Museum in Warsaw, Poland, which has a collection of traditional musical instruments from Poland and Eastern Europe.</li>
+                    <li><input type="checkbox" name="Visit the Warsaw Philharmonic" value="Visit the Warsaw Philharmonic">Visit the Warsaw Philharmonic, which is one of the most important concert halls in the country and it offers a diverse program of classical music.</li>
+                </ul>
+            </section>
+
+            <section id="tab-5" class="tab-content">
+                <h4>
+                    Fútbol
+                </h4>
+
+                <ul>
+                    <li><input type="checkbox" name="Visit the Lausitzer Fussballmuseum" value="Visit the Lausitzer Fussballmuseum">Visit the Lausitzer Fussballmuseum, which is a football museum dedicated to the history of football in the region of Cottbus and the Lausitz.</li>
+                    <li><input type="checkbox" name="Attend a match of FC Energie Cottbus" value="Attend a match of FC Energie Cottbus">Attend a match of FC Energie Cottbus, a football team that plays in the 3. Liga, the third tier of German football.</li>
+                    <li><input type="checkbox" name="Visit the Stadion der Freundschaft" value="Visit the Stadion der Freundschaft">Visit the Stadion der Freundschaft, the stadium where FC Energie Cottbus plays their home matches.</li>
+                    <li><input type="checkbox" name="Visit the Stadion An der Alten Försterei" value="Visit the Stadion An der Alten Försterei">Visit the Stadion An der Alten Försterei, the stadium of 1. FC Union Berlin, one of the most important team of the city of Berlin.</li>
+                    <li><input type="checkbox" name="Visit the Olympiastadion Berlin" value="Visit the Olympiastadion Berlin">Visit the Olympiastadion Berlin, the stadium where the German national team plays their home matches and it's also the stadium where the final of the FIFA World Cup took place in 2006.</li>
+                    <li><input type="checkbox" name="Visit the Allianz Arena" value="Visit the Allianz Arena">Visit the Allianz Arena, home of FC Bayern München, one of the most successful team in Germany, they have won multiple Bundesliga and Champions League titles.</li>
+                    <li><input type="checkbox" name="Visit the Signal Iduna Park" value="Visit the Signal Iduna Park">Visit the Signal Iduna Park, the home stadium of Borussia Dortmund, one of the most important teams in the Bundesliga.</li>
+                    <li><input type="checkbox" name="Visit the Veltins-Arena" value="Visit the Veltins-Arena">Visit the Veltins-Arena, the home stadium of FC Schalke 04, one of the most important teams in the Bundesliga.</li>
+                    <li><input type="checkbox" name="Visit the Weser-Stadion" value="Visit the Weser-Stadion">Visit the Weser-Stadion, the home stadium of Werder Bremen, one of the most important teams in the Bundesliga.</li>
+                </ul>
+            </section>
+
+            <section id="tab-6" class="tab-content">
+                <h4>
+                    Tecnología
+                </h4>
+
+                <ul>
+                    <li><input type="checkbox" name="Visit the Technical Museum in Vienna, Austria" value="Visit the Technical Museum in Vienna, Austria">Visit the Technical Museum in Vienna, Austria, which has exhibits on the history of technology and its impact on society, including the development of software.</li>
+                    <li><input type="checkbox" name="Attend a conference or meetup on software development or technology in Berlin, Germany" value="Attend a conference or meetup on software development or technology in Berlin, Germany">Attend a conference or meetup on software development or technology in Berlin, Germany, which has a thriving tech community.</li>
+                    <li><input type="checkbox" name="Visit the Museum of Technology in Prague, Czech Republic" value="Visit the Museum of Technology in Prague, Czech Republic">Visit the Museum of Technology in Prague, Czech Republic, which has exhibits on the history of technology, including the development of software.</li>
+                    <li><input type="checkbox" name="Visit the Museum of Technology and Communication in Frankfurt, Germany" value="Visit the Museum of Technology and Communication in Frankfurt, Germany">Visit the Museum of Technology and Communication in Frankfurt, Germany, which has a collection of artifacts related to the history of communication technology and software.</li>
+                    <li><input type="checkbox" name="Visit the Science and Technology Center in Warsaw, Poland" value="Visit the Science and Technology Center in Warsaw, Poland">Visit the Science and Technology Center in Warsaw, Poland, which has exhibits and interactive displays on technology, including software development.</li>
+                    <li><input type="checkbox" name="Visit the Technical University of Munich in Germany" value="Visit the Technical University of Munich in Germany">Visit the Technical University of Munich in Germany, which has a strong program in computer science and software engineering.</li>
+                    <li><input type="checkbox" name="Visit the Fraunhofer Institute in Berlin, Germany" value="Visit the Fraunhofer Institute in Berlin, Germany">Visit the Fraunhofer Institute in Berlin, Germany, which conducts research on software engineering and technology.</li>
+                    <li><input type="checkbox" name="Visit the Technical University of Vienna in Austria" value="Visit the Technical University of Vienna in Austria">Visit the Technical University of Vienna in Austria, which has a strong program in computer science and software engineering.</li>
+                    <li><input type="checkbox" name="Visit the Museum of Technology in Berlin, Germany" value="Visit the Museum of Technology in Berlin, Germany">Visit the Museum of Technology in Berlin, Germany, which has exhibits on the history of technology, including the development of software.</li>
+                    <li><input type="checkbox" name="Visit the Wroclaw University of Technology in Poland" value="Visit the Wroclaw University of Technology in Poland">Visit the Wroclaw University of Technology in Poland, which has a strong program in computer science and software engineering.</li>
+                </ul>
+
+            </section>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".tabs-menu a").click(function(event) {
+                event.preventDefault();
+                $(this).parent().addClass("current");
+                $(this).parent().siblings().removeClass("current");
+                var tab = $(this).attr("href");
+                $(".tab-content").not(tab).css("display", "none");
+                $(tab).fadeIn();
+            });
+        });
+    </script>
+    
+</body>
+</html>
